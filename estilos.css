@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formatoBotonesHeader {
+    text-align: center;
+    width: 100%;
+    color: blue;
+    background-color: yellow;
+}
+
+.alineacionBotonesHeader {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0;
+}
+
+.seccionGeneral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: fit-content;
+    background-color: sandybrown;
+}
+
+.seccionArticulos {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: fit-content;
+    background-color: orangered;
+}
+
+.formatoDelHeader {
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    color: blue;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+}
+
+.detallePelicula {
+    padding: 10px;
+    align-items: center;
+    margin: 5%;
+    width: auto;
+    background-color: brown;
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+.formatoDelBody {
+    width: auto;
+}
+
+.resumen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    background-color: blue;
+    max-width: fit-content;
+
+}
+
+body {
+    background-image: url("Fondo.png");
+/*    background-image: url("https://astelus.com/wp-content/uploads/2024/04/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg");*/
+}
+
+.h3 {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+}
+
+.formatoFooter {
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: olive;
+    position: fixed;
+    bottom: 0;
+}
+
+.botonComenzar {
+    align-items: center;
+    display: flow-root;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    background-color: lightskyblue;
+}
