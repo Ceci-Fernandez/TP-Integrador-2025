@@ -76,12 +76,7 @@ body{
     color: var(--color-claro);
 }
 
-.header_nav .header_list .header_registro {
 
-    font-size: medium;
-    margin-left: auto;
-    text-transform: uppercase;
-}
 
 
 .btn{
