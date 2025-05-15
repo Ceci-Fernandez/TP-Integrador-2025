@@ -22,8 +22,9 @@
      */
 }
 body{
-    font-family: 'Geologica', sans-serif;
-  font-weight: 400;   
+  font-family: 'Geologica', sans-serif;
+  font-weight: 400;  
+
 }
 
 
@@ -43,12 +44,6 @@ body{
  font-size: 2em;
 }
 
-.header img {
-    margin: 5px;
-    padding: 0;
-    width: 110px;
-    height: 50px;
-}
 
 .header_nav {
     display: flex;
@@ -75,10 +70,6 @@ body{
 .header_list_items a, .header_registro a{
     color: var(--color-claro);
 }
-
-
-
-
 .btn{
 width: 10em;
 height: 2.3em;
@@ -89,4 +80,73 @@ justify-content: center;
 align-items: center;
 border-radius: .5em;
 }
+/*REGISTRO USUARIO*/
+.container_registro{
+    margin: auto;
+    background-color:var(--color-claro);
+    width: 80%;
+    display: flex;
+    gap:3em;
+    align-items: center;
+    color: var(--color-oscuro);
+    height: 100vh;
+
+}
+.form-registro{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap:2em;
+padding: 2em;
+}
+.form-registro input{
+    width: 90%;
+}
+.plan{
+    width: 100%;
+    height: 100%;
+    border:1px solid black;
+}
+
+.registro-left{
+    padding: 2em;
+    width: 50%;
+}
+.registro-right{
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 2em;
+padding: 2em;
+box-sizing: border-box;
+width: 50%;
+}
+
+.container-planes_registro{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    
+}
+
+.radio-tarjetas-opciones{
+      display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    
+}
+
+/*FOOTER se usa en todas las vistas*/
+.footer{
+    background-color: var(--color-gris-footer);
+    color: var(--color-claro);
+    display: flex;
+   justify-content: space-around;
+   padding: 2em;
+}
+.columna-footer li, a{
+color: var(--color-claro);
+}
+
 

@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+    <header></header>
+    <main class="container_registro">
+        <section class="registro-left">
+            <h1>Registrarse</h1>
+            <form class="form-registro" action="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required   placeholder=" Nombre" >
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required placeholder="Apellido">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="E-mail">
+
+                <label for="nombreUsuario">Nombre de usuario:</label>
+                <input type="text" name="nombreUsuario" id="nombreUsuario" required placeholder="Nombre de usuario">
+
+                <label for="contrasenia">Contraseña:</label>
+                <input type="password" name="contrasenia" id="contrasenia" required placeholder="Contraseña">
+
+                <label for="repetirContrasenia">Repetir contraseña:</label>
+                <input type="password" name="password" id="password" required placeholder="Repetir contraseña">
+            </form>
+        </section>
+        <section class="registro-right">
+            <h2>Metodo de pago</h2>
+            <h3>Eligi tu plan</h3>
+            <div class="container-planes_registro">
+                <div class="plan">
+                    <p>Básico</p>
+                    <input type="radio" name="plan" value="1" class="radio-plan-opcion">
+                </div>
+                <div class="plan">
+                    <p>Estandar</p>
+                    <input type="radio" name="plan" value="2" class="radio-plan-opcion">
+                </div>
+                <div class="plan">
+                    <p>Premium</p>
+                    <input type="radio" name="plan" value="3" class="radio-plan-opcion">
+                </div>
+            </div>
+            <h3> Elegí cómo queres pagar</h3>
+            <p>Tu forma de pago está encriptada y puedes cambiarla cuando quieras.
+                <strong>Transacciones seguras y confiables.
+                    Cancela fácilmente online.</strong>
+            </p>
+            <div class="radio-tarjetas-opciones">
+                <label class="opcion-pago">
+                    <input type="radio" name="opcionPago" value="1">
+                    <div class="img-pago">
+                        <img src="https://via.placeholder.com/200x120?text=Película+1">
+                    </div>
+                </label>
+                 <label class="opcion-pago">
+                    <input type="radio" name="opcionPago" value="2">
+                    <div class="img-pago">
+                        <img src="https://via.placeholder.com/200x120?text=Película+1">
+                    </div>
+                </label>
+                 <label class="opcion-pago">
+                    <input type="radio" name="opcionPago" value="3">
+                    <div class="img-pago">
+                        <img src="https://via.placeholder.com/200x120?text=Película+1">
+                    </div>
+                </label>
+                 <label class="opcion-pago">
+                    <input type="radio" name="opcionPago" value="4">
+                    <div class="img-pago">
+                        <img src="https://via.placeholder.com/200x120?text=Película+1" >
+                    </div>
+                </label>
+
+            </div>
+
+        </section>
+     
+
+
+    </main>
+       <footer class="footer">
+          <div class="columna_footer">
+           <p> Integrantes del grupo</p>
+           <ul>
+            <li>Adrian</li>
+            <li>Cecilia</li>
+            <li>Ivan</li>
+            <li>Luca</li>
+           </ul>
+          </div>
+          <div class="columna_footer">
+            <p>Home</p>
+            <ul>
+                <li><a href="/pantallaPrincipal.html#peliculas">Peliculas</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="/html/perfilUsuario.html">Perfil</a></li>
+            </ul>
+          </div>
+          <div class="columna_footer">
+            <p>Redes Sociales</p>
+            <ul>
+                <li><img src="" alt="Logo-Facebook"></li>
+                <li><img src="" alt="Logo-Instagram"></li>
+                <li><img src="" alt="Logo-YouuTube"></li>
+            </ul>
+          </div>
+        </footer>
+
+</body>
+
+</html>
