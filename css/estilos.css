@@ -70,71 +70,158 @@ body{
 .header_list_items a, .header_registro a{
     color: var(--color-claro);
 }
-.btn{
-width: 10em;
-height: 2.3em;
-background-color: #233dff;
-color: #f4f6fc;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: .5em;
+
+
+.btn {
+  display: inline-block;   
+  background-color:var(--color-botones);
+  color: white;
+  text-decoration: none;   
+   border: 1px solid transparent;
+  border-radius: .5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 10em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
+
+
+.btn:hover {
+  background-color:var(--color-base);
+  color:var(--color-claro);
+}
+
+
+
 /*REGISTRO USUARIO*/
-.container_registro{
-    margin: auto;
-    background-color:var(--color-claro);
-    width: 80%;
+
+.registro {
     display: flex;
-    gap:3em;
-    align-items: center;
-    color: var(--color-oscuro);
-    height: 100vh;
-
-}
-.form-registro{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap:2em;
-padding: 2em;
-}
-.form-registro input{
-    width: 90%;
-}
-.plan{
-    width: 100%;
-    height: 100%;
-    border:1px solid black;
-}
-
-.registro-left{
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 2em auto;
     padding: 2em;
-    width: 50%;
-}
-.registro-right{
-text-align: center;
-display: flex;
-flex-direction: column;
-gap: 2em;
-padding: 2em;
-box-sizing: border-box;
-width: 50%;
+    background-color:var(--color-claro);
+    border-radius: 1em;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+ .registro__datos,
+.registro__pago , .datos__tarjeta{
+  flex: 1;
+  
+ 
 }
 
-.container-planes_registro{
+
+.registro__formulario,.datos__tarjeta{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: .6em;
+    max-width: 25em;
+}
+.datos__tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    background-color: #eaebf2;
+    padding: 1em;
+  
+}
+.registro__pago{
+    display: flex;
+    flex-direction: column;
     gap: 2em;
+}
+.registro__formulario input{
+    padding: .5em;
     width: 100%;
-    
+    border-radius: .5em;
+    border: .5px solid rgb(212, 207, 207);
+    max-width: 100%;
+}
+.datos__tarjeta input{
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    margin: .3em;
 }
 
-.radio-tarjetas-opciones{
-      display: flex;
-    justify-content: center;
-    gap: 2em;
-    width: 100%;
+.fila-en-columnas__tarjeta{
+display: flex;
+gap: .5em;
+}
+.fila-en-columnas__tarjeta input{
+    flex: 1;
+}
+.registro__tarjeta img{
+width: 3em;
+}
+.registro__planes{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.registro__plan{
+  flex: 1 ;
+  background-color: #233dff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
     
+}
+.registro__plan input[type="radio"] {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+}
+
+.registro__plan-label{
+    padding: .5em;
+    border-radius: .3em;
+    cursor: pointer;
+    display: inline-block;
+    transition: border 0.3s;
+}
+.plan-premium{
+  position: relative;
+}
+.plan-premium::after{
+  content: "Más popular";
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  background-color: red;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2em;
+  border-top-left-radius: 2em;
+}
+ 
+
+.registro__plan:hover{
+    background-color: #d3d8e8;
+    color: var(--color-oscuro);
+}
+.contenedor-btn__registro{
+    display: flex;
+    gap: 2em;
+}
+.contenedor-btn__registro .btn{
+border: none;
+padding: 1.5em 1em;
 }
 
 /*FOOTER se usa en todas las vistas*/

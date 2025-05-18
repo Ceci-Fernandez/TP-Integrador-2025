@@ -10,111 +10,121 @@
 
 <body>
     <header></header>
-    <main class="container_registro">
-        <section class="registro-left">
-            <h1>Registrarse</h1>
-            <form class="form-registro" action="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" required   placeholder=" Nombre" >
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido" required placeholder="Apellido">
+    <main class="registro">
+        <section class="registro__datos">
+            <h2 class="registro__titulo">Registrarse</h2>
+            <form class="registro__formulario" action="./perfilUsuario.html" method="POST">
+                <label for="nombre" class="registro__label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="registro__input" required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" required placeholder="E-mail">
+                <label for="apellido" class="registro__label">Apellido</label>
+                <input type="text" id="apellido" name="apellido" class="registro__input" required>
 
-                <label for="nombreUsuario">Nombre de usuario:</label>
-                <input type="text" name="nombreUsuario" id="nombreUsuario" required placeholder="Nombre de usuario">
+                <label for="email" class="registro__label">E-mail</label>
+                <input type="email" id="email" name="email" class="registro__input" required>
 
-                <label for="contrasenia">Contraseña:</label>
-                <input type="password" name="contrasenia" id="contrasenia" required placeholder="Contraseña">
+                <label for="usuario" class="registro__label">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" class="registro__input" required>
 
-                <label for="repetirContrasenia">Repetir contraseña:</label>
-                <input type="password" name="password" id="password" required placeholder="Repetir contraseña">
-            </form>
+                <label for="password" class="registro__label">Contraseña</label>
+                <input type="password" id="password" name="password" class="registro__input" required>
+
+                <label for="confirmar" class="registro__label">Repetir contraseña</label>
+                <input type="password" id="confirmar" name="confirmar" class="registro__input" required>
+           
         </section>
-        <section class="registro-right">
-            <h2>Metodo de pago</h2>
-            <h3>Eligi tu plan</h3>
-            <div class="container-planes_registro">
-                <div class="plan">
-                    <p>Básico</p>
-                    <input type="radio" name="plan" value="1" class="radio-plan-opcion">
-                </div>
-                <div class="plan">
-                    <p>Estandar</p>
-                    <input type="radio" name="plan" value="2" class="radio-plan-opcion">
-                </div>
-                <div class="plan">
-                    <p>Premium</p>
-                    <input type="radio" name="plan" value="3" class="radio-plan-opcion">
-                </div>
-            </div>
-            <h3> Elegí cómo queres pagar</h3>
-            <p>Tu forma de pago está encriptada y puedes cambiarla cuando quieras.
-                <strong>Transacciones seguras y confiables.
-                    Cancela fácilmente online.</strong>
-            </p>
-            <div class="radio-tarjetas-opciones">
-                <label class="opcion-pago">
-                    <input type="radio" name="opcionPago" value="1">
-                    <div class="img-pago">
-                        <img src="https://via.placeholder.com/200x120?text=Película+1">
-                    </div>
-                </label>
-                 <label class="opcion-pago">
-                    <input type="radio" name="opcionPago" value="2">
-                    <div class="img-pago">
-                        <img src="https://via.placeholder.com/200x120?text=Película+1">
-                    </div>
-                </label>
-                 <label class="opcion-pago">
-                    <input type="radio" name="opcionPago" value="3">
-                    <div class="img-pago">
-                        <img src="https://via.placeholder.com/200x120?text=Película+1">
-                    </div>
-                </label>
-                 <label class="opcion-pago">
-                    <input type="radio" name="opcionPago" value="4">
-                    <div class="img-pago">
-                        <img src="https://via.placeholder.com/200x120?text=Película+1" >
-                    </div>
-                </label>
 
+        <section class="registro__pago">
+            <h2 class="registro__titulo">Método de Pago</h2>
+
+            <h3 class="registro__subtitulo">Elegí tu plan</h3>
+            <div class="registro__planes">
+                <label class="registro__plan">
+                    <input type="radio" name="plan" value="basico" required>
+                    <span class="registro__plan-label">Básico</span>
+                </label>
+                <label class="registro__plan">
+                    <input type="radio" name="plan" value="estandar">
+                    <span class="registro__plan-label">Estándar</span>
+                </label>
+                <label class="registro__plan plan-premium">
+                    <input type="radio" name="plan" value="premium">
+                    <span class="registro__plan-label">Premium</span>
+                </label>
             </div>
 
+            <h3 class="registro__subtitulo">Elegí tu forma de pago</h3>
+            <p class="registro__mensaje">Tu forma de pago está encriptada. <strong>Transacciones seguras y
+                    confiables.</strong></p>
+
+            <div class="registro__tarjetas">
+                <label class="registro__tarjeta">
+                    <input type="radio" name="tarjeta" value="naranja" required>
+                    <img src="/img/img-tarjetas/tarjeta-naranja@2x.png" alt="Tarjeta Naranja">
+                </label>
+                <label class="registro__tarjeta">
+                    <input type="radio" name="tarjeta" value="mastercard">
+                    <img src="/img/img-tarjetas/mastercard@2x.png" alt="Mastercard">
+                </label>
+                <label class="registro__tarjeta">
+                    <input type="radio" name="tarjeta" value="visa">
+                    <img src="/img/img-tarjetas/visa@2x.png" alt="Visa">
+                </label>
+                <label class="registro__tarjeta ">
+                    <input type="radio" name="tarjeta" value="cabal">
+                    <img src="/img/img-tarjetas/cabal@2x.png" alt="Cabal">
+                </label>
+            </div>
+            <div class="datos__tarjeta">
+                <h3>Ingresa los datos de tu tarjeta de débito o crédito</h3>
+
+               
+                    <input type="text" name="num-tarjeta" id="num-tarjeta" required placeholder="Número de tarjeta">
+                    <div class="fila-en-columnas__tarjeta">
+                    <input type="date" name="vencimiento" id="vencimineto" required placeholder="Fecha de vencimiento">
+                    <input type="number" name="cod" id="cod" required placeholder="CVV">
+                    </div>
+        
+                    <input type="text" name="nombre" id="nombre" required placeholder="Nombre en la tarjeta">
+                    <div class="contenedor-btn__registro"> 
+                    <button class="btn" type="submit">Iniciar membresía</button>
+                     <a class="btn" href="/html/login.html">Cancelar</a>
+                    </div>
+                  
+
+                </form>
+            </div>
         </section>
-     
-
-
     </main>
-       <footer class="footer">
-          <div class="columna_footer">
-           <p> Integrantes del grupo</p>
-           <ul>
-            <li>Adrian</li>
-            <li>Cecilia</li>
-            <li>Ivan</li>
-            <li>Luca</li>
-           </ul>
-          </div>
-          <div class="columna_footer">
+
+    <footer class="footer">
+        <div class="columna_footer">
+            <p> Integrantes del grupo</p>
+            <ul>
+                <li>Adrian</li>
+                <li>Cecilia</li>
+                <li>Ivan</li>
+                <li>Luca</li>
+            </ul>
+        </div>
+        <div class="columna_footer">
             <p>Home</p>
             <ul>
                 <li><a href="/pantallaPrincipal.html#peliculas">Peliculas</a></li>
                 <li><a href="#">Series</a></li>
                 <li><a href="/html/perfilUsuario.html">Perfil</a></li>
             </ul>
-          </div>
-          <div class="columna_footer">
+        </div>
+        <div class="columna_footer">
             <p>Redes Sociales</p>
             <ul>
                 <li><img src="" alt="Logo-Facebook"></li>
                 <li><img src="" alt="Logo-Instagram"></li>
                 <li><img src="" alt="Logo-YouuTube"></li>
             </ul>
-          </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 
