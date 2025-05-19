@@ -276,8 +276,29 @@ width: 100%;
    justify-content: space-around;
    padding: 2em;
 }
-.columna-footer li, a{
+.columna_footer li, a{
 color: var(--color-claro);
+font-weight: 200;
+line-height: 1.5em;
+}
+
+.columna_footer a:hover{
+  text-decoration: underline;
+  color:var(--color-botones);
+}
+.columna_footer p, .columna_footer-redes p{
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.redes__footer{
+display: flex;
+justify-content: center;
+gap: 1em;
+padding: 1em 0;
+}
+.redes__footer img{
+  width: 1.5em;
 }
 
 /*LOGIN   */
