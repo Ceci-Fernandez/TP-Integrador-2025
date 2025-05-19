@@ -73,23 +73,21 @@ body{
 
 
 .btn {
-  display: inline-block;   
-  background-color:var(--color-botones);
+
+  display: inline-flex;
+  background-color: var(--color-botones);
   color: white;
-  text-decoration: none;   
-   border: 1px solid transparent;
+  text-decoration: none;
+  border: 1px solid transparent;
   border-radius: .5em;
   font-size: 1em;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 10em;
-  height: 2em;
-  display: flex;
+  padding: 0.5em 1em;
   justify-content: center;
   align-items: center;
- 
+  white-space: nowrap; 
 }
-
 
 .btn:hover {
   background-color:var(--color-base);
@@ -113,11 +111,7 @@ body{
  .registro__datos,
 .registro__pago , .datos__tarjeta{
   flex: 1;
-  
- 
 }
-
-
 .registro__formulario,.datos__tarjeta{
     display: flex;
     flex-direction: column;
@@ -223,6 +217,50 @@ width: 3em;
 border: none;
 padding: 1.5em 1em;
 }
+
+
+/*Perfil usuario*/
+.foto__perfil{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  margin: 2em 0 2em ;
+}
+.foto__perfil img{
+  border-radius: 50%;
+  width: 5em;
+
+}
+.suscripto__registro{
+padding: 1em;
+background-color: #d3d8e8;
+width: 100%;
+ 
+}
+/* vista CANCELACIÓN*/
+.cancelacion{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-base);
+}
+.container-mensaje__cancelacion{
+  width: 50%;
+    padding: 2em;
+    background-color: var(--color-claro);
+    border-radius: 1em;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+
+
+
 
 /*FOOTER se usa en todas las vistas*/
 .footer{
