@@ -43,10 +43,16 @@
 
                 <label for="confirmar" class="registro__label">Repetir contraseña</label>
                 <input type="password" id="confirmar" name="confirmar" class="registro__input" required>
-
+                 <div class="contenedor-btn__registro">
+                    <button class="btn" type="submit">Guardar cambios</button>
+                 
+                </div>
+                 </form>
         </section>
 
         <section class="registro__pago">
+        <form class="registro__formulario" action="./perfilUsuario.html" method="POST">
+
               <div class="suscripto__registro">
                 <p>Tu plan</p>
                 <h3>Premium</h3>
@@ -57,8 +63,9 @@
             <h3 class="registro__subtitulo"> Cambiar mi plan</h3>
             <div class="registro__planes">
                 <label class="registro__plan">
-                    <input type="radio" name="plan" value="basico" required>
+                    <input type="radio" name="plan" value="basico">
                     <span class="registro__plan-label">Básico</span>
+                    
                 </label>
                 <label class="registro__plan">
                     <input type="radio" name="plan" value="estandar">
@@ -68,6 +75,7 @@
                     <input type="radio" name="plan" value="premium">
                     <span class="registro__plan-label">Premium</span>
                 </label>
+                
             </div>
             <h3 class="registro__subtitulo">Cambiar metodo de pago.</h3>
             <p class="registro__mensaje">Tu forma de pago está encriptada. <strong>Transacciones seguras y
@@ -103,12 +111,11 @@
                 <input type="text" name="nombre" id="nombre" required placeholder="Nombre en la tarjeta">
                 <div class="contenedor-btn__registro">
                     <button class="btn" type="submit">Guardar cambios</button>
-                    <a class="btn" href="/html/cencelacion.html">Cancelar Suscripción</a>
+                    <a class="btn" href="./cancelacion.html">Cancelar Suscripción</a>
                 </div>
 
-
-                </form>
             </div>
+               </form>
         </section>
     </main>
 
