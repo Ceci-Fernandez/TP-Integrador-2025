@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="/css/estilos.css" /> 
-    <title>Cila Movies</title>
-  </head>
 
-  <body>
-    <header>
-      <h1>Cila Movies</h1>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Series</a></li>
-          <li><a href="">Peliculas</a></li>
-          <li><a href="">Perfil</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/estilos.css" />
+  <title>CILA MOVIES</title>
+</head>
 
-    <main>
-      <section>
-        <label for="categorias">Categorias</label>
+<body>
+  <header class="header">
+    <h1 class="header__h1">CILA MOVIES</h1>
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__li"><a href="#">Home</a></li>
+        <li class="header__li"><a href="/html/detalleSerie.html">Series</a></li>
+        <li class="header__li"><a href="/html/detalleSerie.html">Peliculas</a></li>
+        <li class="header__li btn"><a href="/html/perfilUsuario.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p>Disfruta de las mejores series y peliculas <br>
+          En CILA MOVIES</p>
+        <a href="#catalogo" class="hero__btn">Ver Mas</a>
+      </div>
+    </section>
+
+    <section class="busqueda">
+      <h2 class="busqueda__h2">¿Que queres ver?</h2>
+      <div class="busqueda__content">
+        <input type="search" name="busqueda" id="busqueda" placeholder="Buscar por nombre" />
+        <button>Buscar</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="filtro" id="catalogo">
+        <label for="categoria">Categorías</label>
         <select name="categoria" id="categoria">
-          <option value="" selected>Seleccionar categoria</option>
-          <option value="accion">Accion</option>
+          <option value="" selected>Seleccionar categoría</option>
+          <option value="accion">Acción</option>
           <option value="comedia">Comedia</option>
-          <option value="comedia">Drama</option>
-          <option value="comedia">Terror</option>
+          <option value="drama">Drama</option>
+          <option value="terror">Terror</option>
+          <option value="western">Western</option>
         </select>
-
-        <input
-          type="search"
-          name="busqueda"
-          id="busqueda"
-          placeholder="Buscar por nombre"
-        />
-      </section>
-
-      <section>
-        <a href="/html/detallePelicula.html" id="pelicula">
-          <img
-            src="https://images8.alphacoders.com/133/1337616.jpg"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-
-        <a href="/html/detalleSerie.html">
-          <img
-            src="https://wallpapercat.com/w/full/c/f/2/117652-1920x1080-desktop-full-hd-friends-tv-series-wallpaper-photo.jpg"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-
-        <a href="/html/detallePelicula.html" id="pelicula">
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMmJjYTNiZTItZDk5Ny00MDc4LTk5OWItMWMxZDc5ZWVlZjExXkEyXkFqcGc@._V1_.jpg"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-
-        <a href="/html/detalleSerie.html">
-          <img
-            src="https://ntvb.tmsimg.com/assets/p8282918_b_h8_bn.jpg?w=1280&h=720"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-
-        <a href="/html/detallePelicula.html" id="pelicula">
-          <img
-            src="https://images8.alphacoders.com/133/1337616.jpg"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-
-        <a href="/html/detalleSerie.html">
-          <img
-            src="https://wallpapercat.com/w/full/c/f/2/117652-1920x1080-desktop-full-hd-friends-tv-series-wallpaper-photo.jpg"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-
-        <a href="/html/detallePelicula.html" id="pelicula">
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMmJjYTNiZTItZDk5Ny00MDc4LTk5OWItMWMxZDc5ZWVlZjExXkEyXkFqcGc@._V1_.jpg"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-
-        <a href="/html/detalleSerie.html">
-          <img
-            src="https://ntvb.tmsimg.com/assets/p8282918_b_h8_bn.jpg?w=1280&h=720"
-            alt="El Eternauta"
-            width="1280"
-            height="720"
-          />
-        </a>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="columna_footer">
-        <p>Integrantes del grupo</p>
-        <ul>
-          <li>Adrian</li>
-          <li>Cecilia</li>
-          <li>Ivan</li>
-          <li>Luca</li>
-        </ul>
       </div>
-      <div class="columna_footer">
-        <p>Home</p>
-        <ul>
-          <li><a href="/pantallaPrincipal.html#peliculas">Peliculas</a></li>
-          <li><a href="#">Series</a></li>
-          <li><a href="/html/perfilUsuario.html">Perfil</a></li>
-        </ul>
+    </section>
+
+    <section class="catalogo">
+      <div class="catalogo__grid">
+        <a href="/html/detalleSerie.html" class="pelicula">
+          <img src="/img/peliculas/eleternauta1280x720.jpg" alt="El Eternauta" />
+        </a>
+        <a href="/html/detallePelicula.html" class="pelicula">
+          <img src="/img/peliculas/mision-imposible.jpg" alt="Mision Imposible" />
+        </a>
+        <a href="/html/detalleSerie.html" class="pelicula">
+          <img src="/img/peliculas/friends.jpg" alt="Friends" />
+        </a>
+        <a href="/html/detallePelicula.html" class="pelicula">
+          <img src="/img/peliculas/the-truman-show.jpg" alt="The Truman Show" />
+        </a>
+        <a href="/html/detalleSerie.html" class="pelicula">
+          <img src="/img/peliculas/the-walking-dead.jpg" alt="The Walking Dead" />
+        </a>
+        <a href="/html/detallePelicula.html" class="pelicula">
+          <img src="/img/peliculas/django-unchained.jpg" alt="Django Unchained" />
+        </a>
+        <a href="/html/detalleSerie.html" class="pelicula">
+          <img src="/img/peliculas/las-cuatro-estaciones.jpg" alt="Las Cuatro Estaciones" />
+        </a>
+        <a href="/html/detallePelicula.html" class="pelicula">
+          <img src="/img/peliculas/minecraft-the-movie.jpg" alt="Minecraft The Movie" />
+        </a>
+        <a href="/html/detalleSerie.html" class="pelicula">
+          <img src="/img/peliculas/rick-y-morty.jpg" alt="Rick y Morty" />
+        </a>
+        <a href="/html/detalleSerie.html" class="pelicula">
+          <img src="/img/peliculas/you-temporada-5.jpg" alt="You Temporada 5" />
+        </a>
       </div>
-      <div class="columna_footer">
-        <p>Redes Sociales</p>
-        <ul>
-          <li><img src="" alt="Logo-Facebook" /></li>
-          <li><img src="" alt="Logo-Instagram" /></li>
-          <li><img src="" alt="Logo-YouuTube" /></li>
-        </ul>
+    </section>
+
+    <section class="tendencias">
+      <h2 class="tendencias__h2">Las 5 tendencias</h2>
+      <div class="tendencias__grid">
+        <a href="/html/detallePelicula.html" class="tendencia">
+          <img src="/img/peliculas/eleternauta1280x720.jpg" alt="El Eternauta">
+          <span class="numero">1</span>
+        </a>
+        <a href="/html/detallePelicula.html" class="tendencia">
+          <img src="/img/peliculas/minecraft-the-movie.jpg" alt="Minecraft The Movie">
+          <span class="numero">2</span>
+        </a>
+        <a href="/html/detallePelicula.html" class="tendencia">
+          <img src="/img/peliculas/las-cuatro-estaciones.jpg" alt="Las Cuatro Estaciones">
+          <span class="numero">3</span>
+        </a>
+        <a href="/html/detalleSerie.html" class="tendencia">
+          <img src="/img/peliculas/rick-y-morty.jpg" alt="Rick y Morty">
+          <span class="numero">4</span>
+        </a>
+        <a href="/html/detalleSerie.html" class="tendencia">
+          <img src="/img/peliculas/you-temporada-5.jpg" alt="You Temporada 5">
+          <span class="numero">5</span>
+        </a>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="columna_footer">
+      <p>Integrantes del grupo</p>
+      <ul>
+        <li>Adrian</li>
+        <li>Cecilia</li>
+        <li>Ivan</li>
+        <li>Luca</li>
+      </ul>
+    </div>
+    <div class="columna_footer">
+      <p>Home</p>
+      <ul>
+        <li><a href="/pantallaPrincipal.html#peliculas">Peliculas</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="/html/perfilUsuario.html">Perfil</a></li>
+      </ul>
+    </div>
+    <div class="columna_footer">
+      <p>Redes Sociales</p>
+      <ul>
+        <li><img src="" alt="Logo-Facebook" /></li>
+        <li><img src="" alt="Logo-Instagram" /></li>
+        <li><img src="" alt="Logo-YouuTube" /></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
