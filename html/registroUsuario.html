@@ -9,30 +9,31 @@
 </head>
 
 <body>
-    <header></header>
 
-    <main class="registro">
-        <section class="registro__datos">
+    <main>
+  
+    <form  class="registro"  action="/html/login.html" method="POST">
+        <section class="registro__datos" > 
             <h2 class="registro__titulo">Registrarse</h2>
-            <form class="registro__formulario" action="/html/login.html" method="POST">
+            <div class="registro__formulario">
                 <label for="nombre" class="registro__label">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="registro__input" required>
+                <input type="text" id="nombre_registro" name="nombre" class="registro__input" required>
 
                 <label for="apellido" class="registro__label">Apellido</label>
-                <input type="text" id="apellido" name="apellido" class="registro__input" required>
+                <input type="text" id="apellido_registro" name="apellido" class="registro__input" required>
 
                 <label for="email" class="registro__label">E-mail</label>
-                <input type="email" id="email" name="email" class="registro__input" required>
+                <input type="email" id="email_registro" name="email" class="registro__input" required>
 
                 <label for="usuario" class="registro__label">Nombre de usuario</label>
-                <input type="text" id="usuario" name="usuario" class="registro__input" required>
+                <input type="text" id="usuario_registro" name="usuario" class="registro__input" required>
 
                 <label for="password" class="registro__label">Contraseña</label>
-                <input type="password" id="password" name="password" class="registro__input" required>
+                <input type="password" id="password_registro" name="password" class="registro__input" required>
 
                 <label for="confirmar" class="registro__label">Repetir contraseña</label>
-                <input type="password" id="confirmar" name="confirmar" class="registro__input" required>
-
+                <input type="password" id="confirmar_registro" name="confirmar" class="registro__input" required>
+           </div>
         </section>
 
         <section class="registro__pago">
@@ -80,26 +81,26 @@
                 <h3>Ingresa los datos de tu tarjeta de débito o crédito</h3>
 
                 <input type="text" name="num-tarjeta" id="num-tarjeta" required placeholder="Número de tarjeta">
-                <div class="fila-en-columnas__tarjeta">
+               <div class="fila-en-columnas__tarjeta">
                     <input type="date" name="vencimiento" id="vencimineto" required placeholder="Fecha de vencimiento">
                     <input type="number" name="cod" id="cod" required placeholder="CVV">
                 </div>
 
-                <input type="text" name="nombre" id="nombre" required placeholder="Nombre en la tarjeta">
+
+                <input type="text" name="nombre" id="nombre_tarjeta" required placeholder="Nombre en la tarjeta">
                 <div class="contenedor-btn__registro">
                     <button class="btn" type="submit">Iniciar membresía</button>
                     <a class="btn" href="/html/login.html">Cancelar</a>
                 </div>
-
-
-                </form>
             </div>
         </section>
+        </form>
     </main>
   
-    <footer class="footer">
+    <footer >
+        <div class="footer">
         <div class="columna_footer">
-            <p> Integrantes del grupo</p>
+            <p> Integrantes</p>
             <ul>
                 <li>Adrian</li>
                 <li>Cecilia</li>
@@ -126,6 +127,9 @@
                 <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
             </ul>
         </div>
+         </div>
+        <p class="copyright">Copyright © 2025- by Cila Movie</p>
+       
     </footer>
 
 </body>
