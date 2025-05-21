@@ -12,115 +12,118 @@
 
 <body>
     <header class="header">
-   <a href="/index.html"> <h1 class="header__h1">CILA MOVIES</h1></a>
-    <nav class="header__nav">
-      <ul class="header__ul">
-        <li class="header__li"><a href="/index.html">Home</a></li>
-        <li class="header__li"><a href="/index.html#catalogo">Catalogo</a></li>
-        <li class="header__li"><a href="/index.html#tendencias">Tendencias</a></li>
-        <li class="header__li btn"><a href="/html/login.html">Cerrar sesión</a></li>
-      </ul>
-    </nav>
-  </header>
+        <a href="/index.html">
+            <h1 class="header__h1">CILA MOVIES</h1>
+        </a>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a href="/index.html">Home</a></li>
+                <li class="header__li"><a href="/index.html#catalogo">Catalogo</a></li>
+                <li class="header__li"><a href="/index.html#tendencias">Tendencias</a></li>
+                <li class="header__li btn"><a href="/html/login.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="registro">
-        <section class="registro__datos">
-            <h2 class="registro__titulo">Mi Perfil</h2>
-            <form class="registro__formulario" action="./perfilUsuario.html" method="POST">
+        
+        <section class="registro__datos"> 
+           
+                <form class="registro__formulario " action="./perfilUsuario.html" method="POST">
 
-                <div class="foto__perfil">
-                    <img src="/img/img-usuario.jpeg" alt="">
-                    <h3>Cosme Fulanito</h3>
-                </div>
-            
-                <label for="email" class="registro__label">E-mail : cosmeFulanito8@ghotmail.com</label>
+                    <h2 class="registro__titulo">Mi Perfil</h2>
+                    <div class="foto__perfil">
+                        <img src="/img/img-usuario.jpeg" alt="">
+                        <h3>Cosme Fulanito</h3>
+                    </div>
 
-                <label for="password" class="registro__label">Contraseña: ********</label>
+                    <label for="email" class="registro__label">E-mail : cosmeFulanito8@ghotmail.com</label>
 
-                <label for="nuevaContrasenia" class="registro__label">Nueva contraseña</label>
-                <input type="password" id="confirmar" name="confirmar" class="registro__input" required>
+                    <label for="password" class="registro__label">Contraseña: ********</label>
 
-                <label for="confirmar" class="registro__label">Repetir contraseña</label>
-                <input type="password" id="confirmar" name="confirmar" class="registro__input" required>
-                 <div class="contenedor-btn__registro">
-                    <button class="btn" type="submit">Guardar cambios</button>
-                 
-                </div>
-                 </form>
+                    <label for="nuevaContrasenia" class="registro__label">Nueva contraseña</label>
+                    <input type="password" id="nuevaContarsenia" name="confirmar" class="registro__input" required>
+
+                    <label for="confirmar" class="registro__label">Repetir contraseña</label>
+                    <input type="password" id="confirmar_perfil" name="confirmar" class="registro__input" required>
+                    <div class="contenedor-btn__registro">
+                        <button class="btn" type="submit">Guardar cambios</button>
+                    </div>
+                </form>
+            </div>
         </section>
+       
+            <section class=" registro__pago">
+            <form class="registro__formulario " action="./perfilUsuario.html" method="POST">
 
-        <section class="registro__pago">
-        <form class="registro__formulario" action="./perfilUsuario.html" method="POST">
-
-              <div class="suscripto__registro">
-                <p>Tu plan</p>
-                <h3>Premium</h3>
-                <p>Proxima factura de $7.000.00</p>
-                <p>Tajeta Visa que termina en 2345</p>
-            </div>
-
-            <h3 class="registro__subtitulo"> Cambiar mi plan</h3>
-            <div class="registro__planes">
-                <label class="registro__plan">
-                    <input type="radio" name="plan" value="basico">
-                    <span class="registro__plan-label">Básico</span>
-                    
-                </label>
-                <label class="registro__plan">
-                    <input type="radio" name="plan" value="estandar">
-                    <span class="registro__plan-label">Estándar</span>
-                </label>
-                <label class="registro__plan plan-premium">
-                    <input type="radio" name="plan" value="premium">
-                    <span class="registro__plan-label">Premium</span>
-                </label>
-                
-            </div>
-            <h3 class="registro__subtitulo">Cambiar metodo de pago.</h3>
-            <p class="registro__mensaje">Tu forma de pago está encriptada. <strong>Transacciones seguras y
-                    confiables.</strong></p>
-
-            <div class="registro__tarjetas">
-                <label class="registro__tarjeta">
-                    <input type="radio" name="tarjeta" value="naranja" required>
-                    <img src="/img/img-tarjetas/tarjeta-naranja@2x.png" alt="Tarjeta Naranja">
-                </label>
-                <label class="registro__tarjeta">
-                    <input type="radio" name="tarjeta" value="mastercard">
-                    <img src="/img/img-tarjetas/mastercard@2x.png" alt="Mastercard">
-                </label>
-                <label class="registro__tarjeta">
-                    <input type="radio" name="tarjeta" value="visa">
-                    <img src="/img/img-tarjetas/visa@2x.png" alt="Visa">
-                </label>
-                <label class="registro__tarjeta ">
-                    <input type="radio" name="tarjeta" value="cabal">
-                    <img src="/img/img-tarjetas/cabal@2x.png" alt="Cabal">
-                </label>
-            </div>
-            <div class="datos__tarjeta">
-                <h3>Ingresa los datos de tu tarjeta de débito o crédito</h3>
-
-                <input type="text" name="num-tarjeta" id="num-tarjeta" required placeholder="Número de tarjeta">
-                <div class="fila-en-columnas__tarjeta">
-                    <input type="date" name="vencimiento" id="vencimineto" required placeholder="Fecha de vencimiento">
-                    <input type="number" name="cod" id="cod" required placeholder="CVV">
+                <div class="suscripto__registro">
+                    <p>Tu plan</p>
+                    <h3>Premium</h3>
+                    <p>Proxima factura de $7.000.00</p>
+                    <p>Tajeta Visa que termina en 2345</p>
                 </div>
 
-                <input type="text" name="nombre" id="nombre" required placeholder="Nombre en la tarjeta">
-                <div class="contenedor-btn__registro">
-                    <button class="btn" type="submit">Guardar cambios</button>
-                    <a class="btn" href="./cancelacion.html">Cancelar Suscripción</a>
+                <h3 class="registro__subtitulo"> Cambiar mi plan</h3>
+                <div class="registro__planes">
+                    <label class="registro__plan">
+                        <input type="radio" name="plan" value="basico">
+                        <span class="registro__plan-label">Básico</span>
+                    </label>
+                    <label class="registro__plan">
+                        <input type="radio" name="plan" value="estandar">
+                        <span class="registro__plan-label">Estándar</span>
+                    </label>
+                    <label class="registro__plan plan-premium">
+                        <input type="radio" name="plan" value="premium">
+                        <span class="registro__plan-label">Premium</span>
+                    </label>
                 </div>
+                <h3 class="registro__subtitulo">Cambiar metodo de pago.</h3>
+                <p class="registro__mensaje">Tu forma de pago está encriptada.
+                    <strong>Transacciones seguras y confiables.</strong>
+                </p>
+                <div class="registro__tarjetas">
+                    <label class="registro__tarjeta">
+                        <input type="radio" name="tarjeta" value="naranja" required>
+                        <img src="/img/img-tarjetas/tarjeta-naranja@2x.png" alt="Tarjeta Naranja">
+                    </label>
+                    <label class="registro__tarjeta">
+                        <input type="radio" name="tarjeta" value="mastercard">
+                        <img src="/img/img-tarjetas/mastercard@2x.png" alt="Mastercard">
+                    </label>
+                    <label class="registro__tarjeta">
+                        <input type="radio" name="tarjeta" value="visa">
+                        <img src="/img/img-tarjetas/visa@2x.png" alt="Visa">
+                    </label>
+                    <label class="registro__tarjeta ">
+                        <input type="radio" name="tarjeta" value="cabal">
+                        <img src="/img/img-tarjetas/cabal@2x.png" alt="Cabal">
+                    </label>
+                </div>
+                <div class="datos__tarjeta">
+                    <h3>Ingresa los datos de tu tarjeta de débito o crédito</h3>
 
-            </div>
-               </form>
+                    <input type="text" name="num-tarjeta" id="num-tarjeta" required placeholder="Número de tarjeta">
+                    <div class="fila-en-columnas__tarjeta">
+                        <input type="date" name="vencimiento" id="vencimineto_tarjeta_perfil" required
+                            placeholder="Fecha de vencimiento">
+                        <input type="number" name="cod" id="cod" required placeholder="CVV">
+                    </div>
+                    <input type="text" name="nombre" id="nombre_tarjeta_perfil" required
+                        placeholder="Nombre en la tarjeta">
+                    <div class="contenedor-btn__registro">
+                        <button class="btn" type="submit">Guardar cambios</button>
+                        <a class="btn" href="./cancelacion.html">Cancelar Suscripción</a>
+                    </div>
+                </div>
+        </form>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer >
+        <div class="footer">
         <div class="columna_footer">
-            <p> Integrantes del grupo</p>
+            <p> Integrantes</p>
             <ul>
                 <li>Adrian</li>
                 <li>Cecilia</li>
@@ -133,7 +136,7 @@
             <ul>
                 <li><a href="../index.html">Catalogo</a></li>
                 <li><a href="../index.html">Tendencias</a></li>
-                <li><a href="perfilUsuario.html">Perfil</a></li>
+                <li><a href="../index.html">Home</a></li>
             </ul>
         </div>
         <div class="columna_footer-redes">
@@ -147,8 +150,10 @@
                 <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
             </ul>
         </div>
+         </div>
+        <p class="copyright">Copyright © 2025- by Cila Movie</p>
+       
     </footer>
-
 </body>
 
 </html>
