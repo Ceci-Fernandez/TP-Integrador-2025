@@ -1,46 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Serie</title>
-   <link rel="stylesheet" href="/css/estilos.css">
-<!--CAMBIE LA RUTA DEL CSS, PORQUE NO ACCEDIA A LOS ESTILOS -CECI-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cila movies - mario bros.</title>
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
+<body>
 
-<body class="formatoDelBody">
-    <header class="formataDelHeader">
-        <div class="alineacionBotonesHeader">
-            <h3 class="formatoBotonesHeader">HOME</h3>
-            <h3 class="formatoBotonesHeader">PELÍCULAS</h3>
-            <h3 class="formatoBotonesHeader">SERIES</h3>
-            <h3 class="formatoBotonesHeader">PERFIL</h3>
-        </div>
-    </header>
+  <!-- Navegacion -->
+  <header>
+    
+    <div class="logo">CILA MOVIES</div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">SERIES</a>
+      <a href="#">PELICULAS</a>
+      <a href="#">PERFIL</a>
+    </nav>
+  </header>
+<main>
+  <section class="container">
+    <!-- Iframe con trailer -->
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/TnGl01FkMMo" title="Trailer Super Mario" allowfullscreen></iframe>
 
-    <div class="detallePelicula">
-        <section class="fotoElemento">
-        <img src="G:\Mi unidad\PAPELES UNLAM\PROGRAMACIÓN WEB I\TRABAJOS\TP INTEGRADOR BORRADOR\logo.png" alt="Película"
-            height="200px" width="400px">
-        <button class="botonComenzar">COMENZAR</button>
-        </section>
-        <section class="resumen">
-            <h3>Título: Unlam</h3>
-            <h3>Temporada: 1</h3>
-            <h3>Episodio: 2</h3>
-            <h3>Duración: 100 min.</h3>
-            <h3>Género: Drama.</h3>
-            <h3>Actores: Un montón.</h3>
-            <h3>Resumen: Para no perdérsela.</h3>
-        </section>
+    
+    <div class="info">
+      <h2>Super Mario Bros. Movie (2023)</h2>
+      <p><strong>Duracion:</strong> 1h 32min</p>
+      <p><strong>Genero:</strong> Animacion, Aventura, Comedia</p>
+      <p><strong>Actores:</strong>
+        <a href="https://es.wikipedia.org/wiki/Chris_Pratt" target="_blank">Chris Pratt</a>,
+        <a href="https://es.wikipedia.org/wiki/Anya_Taylor-Joy" target="_blank">Anya Taylor-Joy</a>,
+        <a href="https://es.wikipedia.org/wiki/Jack_Black" target="_blank">Jack Black</a>
+      </p>
+      <p><strong>Resumen:</strong> Mario y Luigi, dos fontaneros de Brooklyn, son transportados a un mundo mágico donde deben rescatar a la Princesa Peach y enfrentarse al malvado Bowser.</p>
+
+      
+      <a class="button" href="https://www.youtube.com/watch?v=TnGl01FkMMo" target="_blank">Comenzar</a>
+    </div>
+  </section>
+
+  <!-- Similares -->
+  <section class="similares">
+
+   <!--<h2>Similares</h2> -->
+    <div class="temporadas"><span class="aseleccionada" >Temporada 1</span>
+    <a class="" href="#">Temporada 2 </a>
+    <a class="" href="#">Temporada 3 </a>
+  
     </div>
 
-    <footer class="formatoFooter">
-        <h4>@2025-TP INTEGRADOR #1</h4>
+  <div class="container">
+    
+    <div class="card-container">
 
+      <div class="card">
+        <p>Capitulo 1</p>
+        <a href="detalle1.html">
+          <img src="./img/peliculas/the-walking-dead.jpg" alt="Stranger Things">
+        </a>
+      </div>
+
+      <div class="card">
+        <p>Capitulo 2</p>
+        <a href="detalle2.html">
+        <img src="../img/peliculas/django-unchained.jpg" alt="House of the Dragon">
+        </a>
+      </div>
+
+      <div class="card">
+        <p>Capitulo 3</p>
+        <a href="detalle3.html">
+        <img src="../img/peliculas/mision-imposible.jpg" alt="Abismo Secreto">
+        </a>
+      </div>
+
+      <div class="card">
+        <p>Capitulo 4</p>
+        <a href="detalle4.html">
+       <img src="./img/peliculas/friends.jpg" alt="Stranger Things 2">
+        </a>
+      </div>
+
+      <div class="card">
+        <p>Capitulo 5</p>
+        <a href="detalle5.html">
+        <img src="./img/peliculas/you-temporada-5.jpg" alt="Stranger Things 3">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+ <footer class="footer">
+        <div class="columna_footer">
+            <p> Integrantes del grupo</p>
+            <ul>
+                <li>Adrian Amarilla</li>
+                <li>Cecilia Fernandez</li>
+                <li>Ivan Yankauska</li>
+                <li>Luca Martinez</li>
+            </ul>
+        </div>
+        <div class="columna_footer">
+            <p>Home</p>
+            <ul>
+                <li><a href="../index.html">Catalogo</a></li>
+                <li><a href="../index.html">Tendencias</a></li>
+                <li><a href="perfilUsuario.html">Perfil</a></li>
+            </ul>
+        </div>
+        <div class="columna_footer-redes">
+            <p>Redes Sociales</p>
+            <ul class="redes__footer">
+
+                <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="../img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
+                <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
+                <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
+                <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
+                <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
+            </ul>
+        </div>
     </footer>
+
+
 </body>
-
 </html>
-

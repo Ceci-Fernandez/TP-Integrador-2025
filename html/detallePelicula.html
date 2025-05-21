@@ -1,30 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"
-        href="/css/estilos.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cila movies - mario bros.</title>
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
+<body>
 
-<body class="body">
-    <header class="header">
-        <p class="header_title">UNFLIX</p>
-        
-        <nav class="header_nav">
-            <ul class="header_list">
-               
-                <li class="#">HOME</li>
-                <li class="header_list_items">PELICULAS</li>
-                <li class="header_list_items">SERIES</li>
-                <li class="header_registro">PERFIL</li>
+  <!-- Navegacion -->
+  <header class="header">
+    <a href="/index.html"> <h1 class="header__h1">CILA MOVIES</h1></a>
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__li"><a href="/index.html">Home</a></li>
+        <li class="header__li"><a href="/index.html#catalogo">Catalogo</a></li>
+        <li class="header__li"><a href="/index.html#tendencias">Tendencias</a></li>
+        <li class="header__li btn"><a href="/html/perfilUsuario.html">Perfil</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+<main>
+  <section class="container">
+    <!-- Iframe con trailer -->
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/TnGl01FkMMo" title="Trailer Super Mario" allowfullscreen></iframe>
+
+    
+    <div class="info">
+      <h2>Super Mario Bros. Movie (2023)</h2>
+      <p><strong>Duracion:</strong> 1h 32min</p>
+      <p><strong>Genero:</strong> Animacion, Aventura, Comedia</p>
+      <p><strong>Actores:</strong>
+        <a href="https://es.wikipedia.org/wiki/Chris_Pratt" target="_blank">Chris Pratt</a>,
+        <a href="https://es.wikipedia.org/wiki/Anya_Taylor-Joy" target="_blank">Anya Taylor-Joy</a>,
+        <a href="https://es.wikipedia.org/wiki/Jack_Black" target="_blank">Jack Black</a>
+      </p>
+      <p><strong>Resumen:</strong> Mario y Luigi, dos fontaneros de Brooklyn, son transportados a un mundo mágico donde deben rescatar a la Princesa Peach y enfrentarse al malvado Bowser.</p>
+
+      
+      <a class="button" href="https://www.youtube.com/watch?v=TnGl01FkMMo" target="_blank">Comenzar</a>
+    </div>
+  </section>
+
+  <!-- Similares -->
+  <section class="similares">
+
+   <h2>Similares</h2> 
+      
+
+  <div class="container">
+    
+    <div class="card-container">
+
+      <div class="card">
+       
+        <a href="detalle1.html">
+          <img src="../img/peliculas/eleternauta1280x720.jpg" alt="Stranger Things">
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="detalle2.html">
+        <img src="../img/peliculas/mision-imposible.jpg" alt="House of the Dragon">
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="detalle3.html">
+        <img src="../img/peliculas/the-walking-dead.jpg" alt="Abismo Secreto">
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="detalle4.html">
+       <img src="../img/peliculas/you-temporada-5.jpg" alt="Stranger Things 2">
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="detalle5.html">
+        <img src="../img/peliculas/rick-y-morty.jpg" alt="Stranger Things 3">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+   <footer class="footer">
+        <div class="columna_footer">
+            <p> Integrantes del grupo</p>
+            <ul>
+                <li>Adrian Amarilla</li>
+                <li>Cecilia Fernandez</li>
+                <li>Ivan Yankauska</li>
+                <li>Luca Martinez</li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        <div class="columna_footer">
+            <p>Home</p>
+            <ul>
+                <li><a href="../index.html">Catalogo</a></li>
+                <li><a href="../index.html">Tendencias</a></li>
+                <li><a href="perfilUsuario.html">Perfil</a></li>
+            </ul>
+        </div>
+        <div class="columna_footer-redes">
+            <p>Redes Sociales</p>
+            <ul class="redes__footer">
+
+                <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="../img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
+                <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
+                <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
+                <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
+                <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+
 
 </body>
-
 </html>
