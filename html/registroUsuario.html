@@ -12,12 +12,12 @@
 
     <main>
   
-    <form  class="registro"  action="/html/login.html" method="POST">
+    <form  class="registro"  action="/html/login.html" method="get">
         <section class="registro__datos" > 
             <h2 class="registro__titulo">Registrarse</h2>
             <div class="registro__formulario">
                 <label for="nombre" class="registro__label">Nombre</label>
-                <input type="text" id="nombre_registro" name="nombre" class="registro__input" required>
+                <input type="text" id="nombre_registro" name="nombre_registro" class="registro__input" required>
 
                 <label for="apellido" class="registro__label">Apellido</label>
                 <input type="text" id="apellido_registro" name="apellido" class="registro__input" required>
@@ -82,12 +82,10 @@
 
                 <input type="text" name="num-tarjeta" id="num-tarjeta" required placeholder="Número de tarjeta">
                <div class="fila-en-columnas__tarjeta">
-                    <input type="date" name="vencimiento" id="vencimineto" required placeholder="Fecha de vencimiento">
+                    <input type="date" name="vencimiento" id="vencimiento" required placeholder="Fecha de vencimiento">
                     <input type="number" name="cod" id="cod" required placeholder="CVV">
                 </div>
-
-
-                <input type="text" name="nombre" id="nombre_tarjeta" required placeholder="Nombre en la tarjeta">
+                <input type="text" name="nombre_tarjeta" id="nombre_tarjeta" required placeholder="Nombre en la tarjeta">
                 <div class="contenedor-btn__registro">
                     <button class="btn" type="submit">Iniciar membresía</button>
                     <a class="btn" href="/html/login.html">Cancelar</a>
