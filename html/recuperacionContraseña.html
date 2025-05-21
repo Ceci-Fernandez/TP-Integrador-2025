@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNFLIX</title>
+    <title>CILA MOVIES</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="fondo_de_recuperar">
     <header class="header">
-       <a href="C:\Users\User\Documents\GitHub\TP-Integrador-2025\index.html"><h1 class="header_log">UNFLIX</h1></a>
+       <a href="C:\Users\User\Documents\GitHub\TP-Integrador-2025\index.html"><h1 class="header_log">CILA MOVIES</h1></a>
     </header>
     <section class="hero_recuperar">
         <img class="imagen_recuperar" src="../img/fondo de recuperar contraseña.jpg" alt="">
@@ -22,15 +22,17 @@
             <li>
                 <p>Enviaremos un correo electrónonico con instrucciones sobre cómo restablecer su contraseña.</p>
             </li>
+            <form id="miFormulario">
             <li ><label for="iniciar Sesión">iniciar Sesión</label>
-                <input id="iniciar Sesión" class="input_login" type="text" placeholder="Correro electrónonico">
+                <input id="iniciar Sesión" class="input_login" type="text" placeholder="Correro electrónonico" required>
             </li>
             <li ><label for="nombre">nombre</label>
-                <input id="nombre" class="input_login" type="text" placeholder="Nombre de usuario">
+                <input id="nombre" class="input_login" type="text" placeholder="Nombre de usuario" required>
             </li>
             <li>
-                <button  class="button_login" aria-placeholder="iniciar Sesión">Inviar un email</button>
+                <button  class="button_login" aria-placeholder="iniciar Sesión" type="submit">Inviar un email</button>
             </li>
+            </form>
         </ul>
     </div>
     </main>

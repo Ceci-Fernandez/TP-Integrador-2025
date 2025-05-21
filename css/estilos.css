@@ -247,7 +247,13 @@ a {
 /*  LOGIN   */
 
 .header_log {
+  text-transform: uppercase;
   color: rgb(255, 255, 255);
+  padding: 6%;
+  display: flex;
+  padding-right: 24%;
+  margin-right: -57%;
+  
 }
 
 .login_box {
@@ -301,6 +307,9 @@ a {
   background-color: #233dff;
   color: #ffffff;
 }
+.button_login:hover {
+    background-color: #badaf0;
+  }
 
 .imagen_login {
   max-width: 100%;
@@ -312,6 +321,9 @@ a {
 }
 .fondo_login {
   background-color: #050a30;
+}
+.ultima_linea{
+color: white;
 }
 /* RECUPERAR CONTRASEÑA*/
 
@@ -354,6 +366,16 @@ a {
 
 .fondo_de_recuperar {
   background-color: #050a30;
+}
+.boton_login{
+display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
 }
 
 /* || HEADER */
