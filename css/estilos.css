@@ -311,6 +311,52 @@ color: rgb(255, 255, 255);
 .hero_login{
   position: relative;
 }
+.fondo_login{
+  background-color:#050a30 ;
+}
+/* RECUPERAR CONTRASEÑA*/
+
+.recuperar_box{
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 30% ;
+  font-size: 125%;
+  position: absolute;
+  top: 50%;
+  transform: translate(110%, -50%);
+}
+
+.hero_recuperar{
+  position: relative;
+}
+
+.imagen_recuperar{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.main_recuperar{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.titulo_recuperar{
+color: #000;
+font-size: 125%;
+}
+
+.recuperar_lista{
+  display: grid;
+  gap: 2rem;
+}
+
+.fondo_de_recuperar{
+background-color: #050a30;
+}
 
 /* || HEADER */
 

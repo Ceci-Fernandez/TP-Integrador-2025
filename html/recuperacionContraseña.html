@@ -4,33 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNFLIX</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    <header>
-        <ul>
-            <li>
-                <h1>UNFLIX</h1>
-            </li>
-            <li>
-                <p>Iniciar Sesión</p>
-            </li>
-        </ul>
+<body class="fondo_de_recuperar">
+    <header class="header">
+       <a href="C:\Users\User\Documents\GitHub\TP-Integrador-2025\index.html"><h1 class="header_log">UNFLIX</h1></a>
     </header>
-    <main>
-        <ul>
-            <li>
-                <h2>Recuperar Contraseña</h2>
+    <section class="hero_recuperar">
+        <img class="imagen_recuperar" src="../img/fondo de recuperar contraseña.jpg" alt="">
+    </section>
+    <main class="main_recuperar">
+    <div class="recuperar_box">
+        <ul class="recuperar_lista">
+            <li class="titulo_recuperar">
+                <h2 >Recuperar contraseña</h>
             </li>
             <li>
                 <p>Enviaremos un correo electrónonico con instrucciones sobre cómo restablecer su contraseña.</p>
             </li>
+            <li ><label for="iniciar Sesión">iniciar Sesión</label>
+                <input id="iniciar Sesión" class="input_login" type="text" placeholder="Correro electrónonico">
+            </li>
+            <li ><label for="nombre">nombre</label>
+                <input id="nombre" class="input_login" type="text" placeholder="Nombre de usuario">
+            </li>
+            <li>
+                <button  class="button_login" aria-placeholder="iniciar Sesión">Inviar un email</button>
+            </li>
         </ul>
-        <div>
-            <input type="text" placeholder="Correo electronico">
-        </div>
-        <div>
-            <button aria-placeholder="Enviarme un email"></button>
-        </div>
+    </div>
     </main>
+    <footer class="footer">
+        <div class="columna_footer">
+            <p> Integrantes del grupo</p>
+            <ul>
+                <li>Adrian</li>
+                <li>Cecilia</li>
+                <li>Ivan</li>
+                <li>Luca</li>
+            </ul>
+        </div>
+        <div class="columna_footer">
+            <p>Home</p>
+            <ul>
+                <li><a href="../index.html">Catalogo</a></li>
+                <li><a href="../index.html">Tendencias</a></li>
+                <li><a href="perfilUsuario.html">Perfil</a></li>
+            </ul>
+        </div>
+        <div class="columna_footer-redes">
+            <p>Redes Sociales</p>
+            <ul class="redes__footer">
+
+                <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="/img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
+                <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="/img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
+                <li><a href="https://www.youtube.com/c/unlamoficial"><img src="/img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
+                <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="/img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
+                <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
