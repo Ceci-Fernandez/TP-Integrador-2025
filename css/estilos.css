@@ -51,6 +51,10 @@ body {
 .registro {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+   max-width: 1200px; 
+  width: 100%; 
   gap: 2em;
   margin: 2em auto;
   padding: 2em;
@@ -238,49 +242,64 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  padding: 1em 0;
+padding:.2em;
 }
 .redes__footer img {
   width: 1.5em;
 }
+.copyright{
+  text-align: center;
+}
 
 /*  LOGIN   */
+.main_login {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('/img/collage-de-fondo-de-pelicula.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
+}
+
+.login_box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+  color: white;
+}
 .header_log {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   padding: 6%;
-  display: flex;
+ 
   padding-right: 24%;
   margin-right: -57%;
   
 }
+.text__iniciosesion{
+  font-weight: bold;
+}
+.text_subrralado{
+  text-decoration: underline;
+}
 
 .login_box {
   display: flex;
-  justify-content: center;
+ flex-direction: column;
+ gap: 2em;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  margin-left: 50%;
-  margin-right: 50%;
-}
-.login_box {
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 2rem;
-  text-align: center;
-  width: 45%;
-  font-size: 125%;
-  position: absolute;
-  top: 50%;
-  bottom: -20%;
-  transform: translate(-50%, -50%);
+
 }
 
-.main_login {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
 
 .titulo_login {
   color: white;
@@ -297,19 +316,6 @@ a {
   color: #fff;
   font-size: 1.3rem;
 }
-
-.button_login {
-  width: 100%;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  font-size: 1.3rem;
-  background-color: #233dff;
-  color: #ffffff;
-}
-.button_login:hover {
-    background-color: #badaf0;
-  }
 
 .imagen_login {
   max-width: 100%;
@@ -840,4 +846,82 @@ iframe {
   .columna_footer {
     text-align: center;
   }
+}
+/*Media query de registro de usuario*/
+/* celualar*/
+@media screen and (max-width: 600px) {
+  .registro {
+    flex-direction: column; 
+    padding: 1em; 
+  }
+  .registro__formulario,
+  .datos__tarjeta {
+    max-width: 100%; 
+  }
+  .registro__planes {
+    flex-direction: column; 
+  }
+  .registro__tarjetas {
+   display: flex;
+   gap: 1em;
+    align-items: center; 
+  }
+  .contenedor-btn__registro {
+    flex-direction: column; 
+    gap: 1em; 
+  }
+  .registro__plan input[type="radio"] {
+    top: 0.5em; 
+    right: 0.5em;
+  }
+}
+/*  Tablets  */
+@media screen and (max-width: 1024px) {
+  .registro {
+    flex-direction: column; 
+    gap: 1.5em; 
+  }
+   .registro__planes {
+    flex-wrap: wrap;
+    gap: 1em;  
+  }
+  .plan-premium{
+    margin-top: 1.3em;
+  }
+
+  .registro__plan {
+    flex: 1 
+  }
+
+  .registro__tarjetas {
+    display: flex;
+    gap: 1em; 
+  }
+
+  .contenedor-btn__registro {
+    flex-wrap: wrap;
+  }
+
+  .registro__tarjeta img {
+    width: 4em; 
+  }
+}
+
+/*media query footer*/
+/*celu*/
+@media screen and (max-width: 600px) {
+  .columna_footer p, ul,a{
+    font-size: .8em;
+  }
+
+  .columna_footer-redes p, ul,a{
+   font-size: .8em;
+
+  }
+
+  .redes__footer{
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
