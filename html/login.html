@@ -6,45 +6,35 @@
     <title>CILA MOVIES</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="fondo_login">
-    <header class="header">
-       <a href="C:\Users\User\Documents\GitHub\TP-Integrador-2025\index.html"><h1 class="header_log">CILA MOVIES</h1></a>
-       
-    </header>
-    <section class="hero_login">
-        <img class="imagen_login" src="../img/collage-de-fondo-de-pelicula.jpg" alt="">
-    </section>
-    <main class="main_login">
+<body >
+         <header class="header">
+            <a href="/index.html"><h1 class="header_log">CILA MOVIES</h1></a>
+        </header>
+
+    <main class="main_login">        
     <div class="login_box">
-        <ul>
-            <li class="titulo_login">
-                <h2 >Iniciar Sesión</h>
-            </li>
-             <form id="miFormulario">
-            <li>
+            <h1 class="titulo_login" >Iniciar Sesión</h1>
+        
+                <form action="./perfilUsuario.html" method="post">
+        
                 <input class="input_login" type="text" placeholder="Correo electronico"  required>
-            </li>
-            <li >
-                <input  class="input_login" type="text" placeholder="Contraseña"  required>
-            </li>
-            <li class="boton_login">
-                <a  href="C:\Users\User\Documents\GitHub\TP-Integrador-2025\html\perfilUsuario.html">
-                    Iniciar Sesion
-                </a>
-            </li>
+           
+                <input  class="input_login" type="password" placeholder="Contraseña"  required>
+                <button class="btn" type="submit">Iniciar Sesion</button>
             </form>
-            <li>
-                    <a href="C:\Users\User\Documents\GitHub\TP-Integrador-2025\html\recuperacionContraseña.html">Olvide mi contraseña</a>
-            </li>
-            <li class="ultima_linea">
-                <a href="C:\Users\User\Documents\GitHub\TP-Integrador-2025\html\registroUsuario.html">¿No tenes cuenta? <br> Registrarte</a>
-                </li>
+                <a class="text_subrralado" href="./recuperacionContraseña.html">Olvide mi contraseña</a>
+       
+            <div class="ultima_linea">
+               <p class="text__iniciosesion">¿No tenes cuenta?</p> 
+                <a  class="text_subrralado" href="\html\registroUsuario.html"> Registrarte</a>
+                </div>
         </ul>
     </div>
     </main>
-    <footer class="footer">
+      <footer >
+        <div class="footer">
         <div class="columna_footer">
-            <p> Integrantes del grupo</p>
+            <p> Integrantes</p>
             <ul>
                 <li>Adrian</li>
                 <li>Cecilia</li>
@@ -57,7 +47,7 @@
             <ul>
                 <li><a href="../index.html">Catalogo</a></li>
                 <li><a href="../index.html">Tendencias</a></li>
-                <li><a href="perfilUsuario.html">Perfil</a></li>
+                <li><a href="../index.html">Home</a></li>
             </ul>
         </div>
         <div class="columna_footer-redes">
@@ -71,6 +61,9 @@
                 <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
             </ul>
         </div>
+         </div>
+        <p class="copyright">Copyright © 2025- by Cila Movie</p>
+       
     </footer>
 </body>
 </html>
