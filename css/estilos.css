@@ -643,6 +643,7 @@ iframe {
 
 .info {
   max-width: 500px;
+  color: black;
 }
 
 .info h2 {
@@ -684,6 +685,7 @@ iframe {
 }
 
 .card {
+  color: #fff;
   flex: 1;
   width: 20em;
   transition: transform 0.3s;
