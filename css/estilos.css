@@ -837,8 +837,7 @@ iframe {
 
   /* Footer */
   .footer {
-    display: flex;
-    flex-direction: column;
+  
     gap: 1em;
     padding: 1em;
     background-color: #050a30;
