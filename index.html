@@ -10,13 +10,15 @@
 
 <body>
   <header class="header">
-   <a href="#"> <h1 class="header__h1">CILA MOVIES</h1></a>
+    <a href="#">
+      <h1 class="header__h1">CILA MOVIES</h1>
+    </a>
     <nav class="header__nav">
       <ul class="header__ul">
         <li class="header__li"><a href="#">Home</a></li>
-        <li class="header__li"><a href="/html/detalleSerie.html">Series</a></li>
-        <li class="header__li"><a href="/html/detalleSerie.html">Peliculas</a></li>
-        <li class="header__li btn"><a href="/html/perfilUsuario.html">Perfil</a></li>
+        <li class="header__li"><a href="#catalogo">Catalogo</a></li>
+        <li class="header__li"><a href="#tendencias">Tendencias</a></li>
+        <li class="header__li"><a href="/html/login.html" class="header__li-btn">Iniciar Sesion</a></li>
       </ul>
     </nav>
   </header>
@@ -26,7 +28,7 @@
       <div class="hero__content">
         <p>Disfruta de las mejores series y peliculas <br>
           En CILA MOVIES</p>
-        <a href="#catalogo" class="hero__btn">Ver Mas</a>
+        <a href="/html/registroUsuario.html" class="hero__btn">Suscribete</a>
       </div>
     </section>
 
@@ -39,7 +41,7 @@
     </section>
 
     <section>
-      <div class="filtro" >
+      <div class="filtro">
         <label for="categoria">Categorías</label>
         <select name="categoria" id="categoria">
           <option value="" selected>Seleccionar categoría</option>
@@ -90,7 +92,7 @@
     <section class="tendencias" id="tendencias">
       <h2 class="tendencias__h2">Las 5 tendencias</h2>
       <div class="tendencias__grid">
-        <a href="/html/detallePelicula.html" class="tendencia">
+        <a href="/html/detalleSerie.html" class="tendencia">
           <img src="/img/peliculas/eleternauta1280x720.jpg" alt="El Eternauta">
           <span class="numero">1</span>
         </a>
@@ -98,7 +100,7 @@
           <img src="/img/peliculas/minecraft-the-movie.jpg" alt="Minecraft The Movie">
           <span class="numero">2</span>
         </a>
-        <a href="/html/detallePelicula.html" class="tendencia">
+        <a href="/html/detalleSerie.html" class="tendencia">
           <img src="/img/peliculas/las-cuatro-estaciones.jpg" alt="Las Cuatro Estaciones">
           <span class="numero">3</span>
         </a>
@@ -116,28 +118,36 @@
 
   <footer class="footer">
     <div class="columna_footer">
-      <p>Integrantes del grupo</p>
+      <p> Integrantes del grupo</p>
       <ul>
-        <li>Adrian</li>
-        <li>Cecilia</li>
-        <li>Ivan</li>
-        <li>Luca</li>
+        <li>Adrian Amarilla</li>
+        <li>Cecilia Fernandez</li>
+        <li>Ivan Yankauska</li>
+        <li>Luca Martinez</li>
       </ul>
     </div>
     <div class="columna_footer">
       <p>Home</p>
       <ul>
-        <li><a href="/pantallaPrincipal.html#peliculas">Peliculas</a></li>
-        <li><a href="#">Series</a></li>
-        <li><a href="/html/perfilUsuario.html">Perfil</a></li>
+        <li><a href="../index.html">Catalogo</a></li>
+        <li><a href="../index.html">Tendencias</a></li>
+        <li><a href="perfilUsuario.html">Perfil</a></li>
       </ul>
     </div>
-    <div class="columna_footer">
+    <div class="columna_footer-redes">
       <p>Redes Sociales</p>
-      <ul>
-        <li><img src="" alt="Logo-Facebook" /></li>
-        <li><img src="" alt="Logo-Instagram" /></li>
-        <li><img src="" alt="Logo-YouuTube" /></li>
+      <ul class="redes__footer">
+
+        <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="../img/iconos redes/facebook.png"
+              alt="Logo-Facebook"></a></li>
+        <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png"
+              alt="Logo-Instagram"></a></li>
+        <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png"
+              alt="Logo-YouTube"></a></li>
+        <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png"
+              alt="Logo-Tik-tok"></a></li>
+        <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+              src="../img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
       </ul>
     </div>
   </footer>
