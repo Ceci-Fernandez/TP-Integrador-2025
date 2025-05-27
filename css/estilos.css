@@ -10,6 +10,7 @@
 
   /*SE AGREGO ESTILOS PARA TODA LA PÁGINA*/
 }
+
 :root {
   --color-base: #050a30;
   --color-botones: #233dff;
@@ -20,6 +21,7 @@
   /*DEFINÍ VARIABLES DE LOS COLORES QUE VAMOS A USAR EN TODO EL SITIO. SOLO USAR ESTOS COLORES.
      */
 }
+
 body {
   font-family: "Geologica", sans-serif;
   font-weight: 400;
@@ -53,8 +55,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-   max-width: 1200px; 
-  width: 100%; 
+  max-width: 1200px;
+  width: 100%;
   gap: 2em;
   margin: 2em auto;
   padding: 2em;
@@ -62,11 +64,13 @@ body {
   border-radius: 1em;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
+
 .registro__datos,
 .registro__pago,
 .datos__tarjeta {
   flex: 1;
 }
+
 .registro__formulario,
 .datos__tarjeta {
   display: flex;
@@ -74,6 +78,7 @@ body {
   gap: 0.6em;
   max-width: 25em;
 }
+
 .datos__tarjeta {
   display: flex;
   flex-direction: column;
@@ -81,15 +86,18 @@ body {
   background-color: #eaebf2;
   padding: 1em;
 }
+
 .registro__tarjetas {
   display: flex;
   gap: 1em;
 }
+
 .registro__pago {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
+
 .registro__formulario input {
   padding: 0.5em;
   width: 100%;
@@ -97,6 +105,7 @@ body {
   border: 0.5px solid rgb(212, 207, 207);
   max-width: 100%;
 }
+
 .datos__tarjeta input {
   padding: 0.5em;
   border: 1px solid #ccc;
@@ -109,17 +118,21 @@ body {
   display: flex;
   gap: 0.5em;
 }
+
 .fila-en-columnas__tarjeta input {
   flex: 1;
 }
+
 .registro__tarjeta img {
   width: 3em;
 }
+
 .registro__planes {
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
 }
+
 .registro__plan {
   flex: 1;
   background-color: #233dff;
@@ -130,6 +143,7 @@ body {
   cursor: pointer;
   position: relative;
 }
+
 .registro__plan input[type="radio"] {
   position: absolute;
   top: 3rem;
@@ -143,9 +157,11 @@ body {
   display: inline-block;
   transition: border 0.3s;
 }
+
 .plan-premium {
   position: relative;
 }
+
 .plan-premium::after {
   content: "Más popular";
   position: absolute;
@@ -166,10 +182,12 @@ body {
   background-color: #d3d8e8;
   color: var(--color-oscuro);
 }
+
 .contenedor-btn__registro {
   display: flex;
   gap: 2em;
 }
+
 .contenedor-btn__registro .btn {
   border: none;
   padding: 1.5em 1em;
@@ -182,15 +200,18 @@ body {
   gap: 0.5em;
   margin: 2em 0 2em;
 }
+
 .foto__perfil img {
   border-radius: 50%;
   width: 5em;
 }
+
 .suscripto__registro {
   padding: 1em;
   background-color: #d3d8e8;
   width: 100%;
 }
+
 /* vista CANCELACIÓN*/
 .cancelacion {
   min-height: 100vh;
@@ -199,6 +220,7 @@ body {
   align-items: center;
   background-color: var(--color-base);
 }
+
 .container-mensaje__cancelacion {
   width: 50%;
   padding: 2em;
@@ -221,6 +243,7 @@ body {
   justify-content: space-around;
   padding: 2em;
 }
+
 .columna_footer li,
 a {
   color: var(--color-claro);
@@ -232,6 +255,7 @@ a {
   text-decoration: underline;
   color: var(--color-botones);
 }
+
 .columna_footer p,
 .columna_footer-redes p {
   font-size: 1.2em;
@@ -242,12 +266,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-padding:.2em;
+  padding: .2em;
 }
+
 .redes__footer img {
   width: 1.5em;
 }
-.copyright{
+
+.copyright {
   text-align: center;
 }
 
@@ -256,7 +282,7 @@ padding:.2em;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('/img/collage-de-fondo-de-pelicula.jpg'); 
+  background-image: url('/img/collage-de-fondo-de-pelicula.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -275,26 +301,29 @@ padding:.2em;
   width: 90%;
   color: white;
 }
+
 .header_log {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   padding: 6%;
- 
+
   padding-right: 24%;
   margin-right: -57%;
-  
+
 }
-.text__iniciosesion{
+
+.text__iniciosesion {
   font-weight: bold;
 }
-.text_subrralado{
+
+.text_subrralado {
   text-decoration: underline;
 }
 
 .login_box {
   display: flex;
- flex-direction: column;
- gap: 2em;
+  flex-direction: column;
+  gap: 2em;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
 
@@ -322,15 +351,19 @@ padding:.2em;
   width: 100%;
   height: 100%;
 }
+
 .hero_login {
   position: relative;
 }
+
 .fondo_login {
   background-color: #050a30;
 }
-.ultima_linea{
-color: white;
+
+.ultima_linea {
+  color: white;
 }
+
 /* RECUPERAR CONTRASEÑA*/
 
 .recuperar_box {
@@ -339,13 +372,8 @@ color: white;
   text-align: center;
   width: 30%;
   font-size: 125%;
-  position: absolute;
-  top: 50%;
-  transform: translate(110%, -50%);
-}
-
-.hero_recuperar {
-  position: relative;
+  gap: 2rem;
+  
 }
 
 .imagen_recuperar {
@@ -355,9 +383,10 @@ color: white;
 }
 
 .main_recuperar {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .titulo_recuperar {
@@ -371,17 +400,18 @@ color: white;
 }
 
 .fondo_de_recuperar {
-  background-color: #050a30;
+  background-image: url(../img/fondo\ de\ recuperar\ contraseña.jpg);
 }
-.boton_login{
-display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: sans-serif;
-    transition: background-color 0.3s;
+
+.boton_login {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  transition: background-color 0.3s;
 }
 
 /* || HEADER */
@@ -662,6 +692,7 @@ iframe {
   display: inline-block;
   margin: 1rem 0;
 }
+
 .similares {
   background-color: #050a30;
   padding: 40px 20px;
@@ -700,6 +731,7 @@ iframe {
 .card:hover {
   transform: scale(1.05);
 }
+
 .card p {
   text-decoration: none;
 }
@@ -715,6 +747,7 @@ iframe {
   color: #9ca8fd;
   cursor: pointer;
 }
+
 .temporadas {
   display: flex;
   justify-content: flex-start;
@@ -734,6 +767,7 @@ iframe {
 }
 
 @media (max-width: 768px) {
+
   /* Header */
   .header {
     position: static;
@@ -837,7 +871,7 @@ iframe {
 
   /* Footer */
   .footer {
-  
+
     gap: 1em;
     padding: 1em;
     background-color: #050a30;
@@ -848,55 +882,64 @@ iframe {
     text-align: center;
   }
 }
+
 /*Media query de registro de usuario*/
 /* celualar*/
 @media screen and (max-width: 600px) {
   .registro {
-    flex-direction: column; 
-    padding: 1em; 
-  }
-  .registro__formulario,
-  .datos__tarjeta {
-    max-width: 100%; 
-  }
-  .registro__planes {
-    flex-direction: column; 
-  }
-  .registro__tarjetas {
-   display: flex;
-   gap: 1em;
-    align-items: center; 
-  }
-  .contenedor-btn__registro {
-    flex-direction: column; 
-    gap: 1em; 
-  }
-  .registro__plan input[type="radio"] {
-    top: 0.5em; 
-    right: 0.5em;
-  }
-}
-/*  Tablets  */
-@media screen and (max-width: 1024px) {
-  .registro {
-    flex-direction: column; 
-    gap: 1.5em; 
-  }
-   .registro__planes {
-    flex-wrap: wrap;
-    gap: 1em;  
-  }
-  .plan-premium{
-    margin-top: 1.3em;
+    flex-direction: column;
+    padding: 1em;
   }
 
-  .registro__plan {
-    flex: 1 
+  .registro__formulario,
+  .datos__tarjeta {
+    max-width: 100%;
+  }
+
+  .registro__planes {
+    flex-direction: column;
   }
 
   .registro__tarjetas {
     display: flex;
-    gap: 1em; 
+    gap: 1em;
+    align-items: center;
+  }
+
+  .contenedor-btn__registro {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .registro__plan input[type="radio"] {
+    top: 0.5em;
+    right: 0.5em;
+  }
+}
+
+/*  Tablets  */
+@media screen and (max-width: 1024px) {
+  .registro {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .registro__planes {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .plan-premium {
+    margin-top: 1.3em;
+  }
+
+  .registro__plan {
+    flex: 1
+  }
+
+  .registro__tarjetas {
+    display: flex;
+    gap: 1em;
   }
 
   .contenedor-btn__registro {
@@ -904,25 +947,30 @@ iframe {
   }
 
   .registro__tarjeta img {
-    width: 4em; 
+    width: 4em;
   }
 }
 
 /*media query footer*/
 /*celu*/
 @media screen and (max-width: 600px) {
-  .columna_footer p, ul,a{
+
+  .columna_footer p,
+  ul,
+  a {
     font-size: .8em;
   }
 
-  .columna_footer-redes p, ul,a{
-   font-size: .8em;
+  .columna_footer-redes p,
+  ul,
+  a {
+    font-size: .8em;
 
   }
 
-  .redes__footer{
-   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  .redes__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
