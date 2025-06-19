@@ -19,22 +19,30 @@
         <div class="login_box">
             <h1 class="titulo_login">Iniciar Sesión</h1>
 
-            <form action="./perfilUsuario.html" method="get">
+            <!-- 🔧 CORREGIDO: Formulario sin action/method, con ID -->
+            <form id="formLogin">
 
-                <input class="input_login" type="text" placeholder="Correo electronico" required>
+                <!-- 🆕 NUEVO: IDs agregados a los inputs -->
+                <input id="email" class="input_login" type="email" placeholder="Correo electronico" required>
 
-                <input class="input_login" type="password" placeholder="Contraseña" required>
-                <button class="btn" type="submit">Iniciar Sesion</button>
+                <input id="password" class="input_login" type="password" placeholder="Contraseña" required>
+                
+                <!-- 🆕 NUEVO: ID agregado al botón y deshabilitado por defecto -->
+                <button id="btnLogin" class="btn" type="submit" disabled>Iniciar Sesion</button>
             </form>
+
+            <!-- 🆕 NUEVO: Contenedor para mensajes de error -->
+            <div id="mensajeError" class="mensaje-error" style="display: none; color: red; margin-top: 10px; text-align: center;"></div>
+
             <a class="text_subrralado" href="./recuperacionContraseña.html">Olvide mi contraseña</a>
 
             <div class="ultima_linea">
                 <p class="text__iniciosesion">¿No tenes cuenta?</p>
-                <a class="text_subrralado" href="..\html\registroUsuario.html"> Registrarte</a>
+                <a class="text_subrralado" href="./registroUsuario.html"> Registrarte</a>
             </div>
-            </ul>
         </div>
     </main>
+
     <footer>
         <div class="footer">
             <div class="columna_footer">
@@ -51,13 +59,12 @@
                 <ul>
                     <li><a href="../index.html">Catalogo</a></li>
                     <li><a href="../index.html">Tendencias</a></li>
-                    <li><a href="../index.html">Home</a></li>
+            
                 </ul>
             </div>
             <div class="columna_footer-redes">
                 <p>Redes Sociales</p>
                 <ul class="redes__footer">
-
                     <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img
                                 src="/img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
                     <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img
@@ -72,8 +79,11 @@
             </div>
         </div>
         <p class="copyright">Copyright © 2025- by Cila Movie</p>
-
     </footer>
+
+    <!-- 🆕 NUEVO: Script agregado -->
+    <script src="../js/login.js"></script>
+    <script src="/js/navegacion.js"></script>
 </body>
 
 </html>

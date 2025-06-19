@@ -7,6 +7,7 @@
   <title>Perfil de Usuario</title>
   <link rel="stylesheet" href="/css/estilos.css">
   <link rel="stylesheet" href="/css/perfilUsuario.css">
+
 </head>
 
 <body>
@@ -45,14 +46,17 @@
         <input type="password" id="confirmar_perfil" class="registro__input">
 
         <div class="contenedor-btn__registro">
-          <button class="btn" id="btnGuardar" type="button" disabled>Guardar cambios</button>
+          <button class="btn" id="btnGuardarContrasenia" type="button" disabled>Guardar cambios de contraseña</button>
         </div>
       </form>
-        <div class="containerFavoritos__pefil">
-      <div class="favoritos__perfil">
-
+      
+      <!-- 💖 SECCIÓN DE FAVORITOS MEJORADA -->
+      <div class="containerFavoritos__pefil">
+        <div class="favoritos__perfil">
+          <h3>Mis favoritos</h3>
+          <!-- Los favoritos se cargarán aquí dinámicamente -->
+        </div>
       </div>
-    </div>
     </section>
 
     <section class="registro__pago">
@@ -61,36 +65,58 @@
           <p>Tu plan</p>
           <h3 id="planActual"></h3>
           <p id="proximaFactura">Próxima factura: $</p>
-          <p id="tarjetaActual">Tarjeta actual terminada en:</p>
+         
+          <div class="metodo-pago-actual">
+            <p id="tarjetaActual">Tarjeta actual terminada en: </p>
+          </div>
         </div>
 
         <h3 class="registro__subtitulo">Cambiar mi plan</h3>
         <div class="registro__planes" id="planesContainer"></div>
+        
+        <div class="contenedor-btn__registro">
+          <button class="btn" id="btnGuardarPlan" type="button" disabled>Guardar cambio de plan</button>
+        </div>
+        
+        <div id="mensajeExito" class="mensajeExito" style="display: none;">
+          ¡El plan fue actualizado exitosamente!
+        </div>
 
-        <h3 class="registro__subtitulo">Cambiar método de pago</h3>
+        <h3 class="registro__subtitulo">Método de pago</h3>
         <p class="registro__mensaje">Tu forma de pago está encriptada. <strong>Transacciones seguras y confiables.</strong></p>
+        
+        <div class="metodo-pago-control">
+          <button type="button" id="btnCambiarPago" class="btn-link">Cambiar método de pago</button>
+        </div>
 
-        <div class="registro__tarjetas" id="metodosPago"></div>
+        <div id="formularioPago" class="formulario-pago-oculto" style="display: none;">
+          <h4>Selecciona tu método de pago</h4>
+          
+          <div class="registro__tarjetas" id="metodosPago"></div>
 
-        <div class="datos__tarjeta" id="datosTarjeta">
-          <h3>Ingresa los datos de tu tarjeta</h3>
-          <input type="text" id="num-tarjeta" placeholder="Número de tarjeta">
+          <div class="datos__tarjeta" id="datosTarjeta">
+            <h4>Ingresa los datos de tu tarjeta</h4>
+            <input type="text" id="num-tarjeta" placeholder="Número de tarjeta">
 
-          <div class="fila-en-columnas__tarjeta">
-            <input type="date" id="vencimineto_tarjeta_perfil">
-            <input type="number" id="cod" placeholder="CVV">
+            <div class="fila-en-columnas__tarjeta">
+              <input type="date" id="vencimineto_tarjeta_perfil">
+              <input type="number" id="cod" placeholder="CVV">
+            </div>
+
+            <input type="text" id="nombre_tarjeta_perfil" placeholder="Nombre en la tarjeta">
           </div>
-
-          <input type="text" id="nombre_tarjeta_perfil" placeholder="Nombre en la tarjeta">
 
           <div class="contenedor-btn__registro">
-            <button class="btn" id="btnGuardarPago" type="button" disabled>Guardar cambios</button>
-            <a class="btn" id="btnCancelarSub" href="#">Cancelar Suscripción</a>
+            <button class="btn" id="btnGuardarPago" type="button" disabled>Guardar método de pago</button>
+            <button class="btn btn-secundario" id="btnCancelarPago" type="button">Cancelar</button>
           </div>
+        </div>
+
+        <div class="contenedor-btn__registro">
+          <a class="btn btn-peligro" id="btnCancelarSub" href="#">Cancelar Suscripción</a>
         </div>
       </form>
     </section>
-  
   </main>
 
   <footer>
@@ -109,7 +135,6 @@
         <ul>
           <li><a href="../index.html">Catálogo</a></li>
           <li><a href="../index.html">Tendencias</a></li>
-          <li><a href="../index.html">Home</a></li>
         </ul>
       </div>
       <div class="columna_footer-redes">
@@ -127,6 +152,8 @@
   </footer>
 
   <script src="/js/perfilUsuario.js"></script>
+  <script src="/js/navegacion.js"></script>
+
 </body>
 
 </html>

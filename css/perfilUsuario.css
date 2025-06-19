@@ -163,6 +163,334 @@
   background-color: #eef3ff;
 }
 
+.mensajeExito{
+display:none;
+color: green; 
+font-weight: bold;
+}
+
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.formulario-pago-oculto {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.btn-secundario {
+  background-color: #6c757d;
+}
+
+.btn-peligro {
+  background-color: #dc3545;
+}
+
+
+
+/* 💖 ESTILOS PARA FAVORITOS EN EL PERFIL */
+
+/* 🎯 Container principal de favoritos */
+.containerFavoritos__pefil {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.favoritos__perfil {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: white;
+}
+
+.favoritos__perfil h3 {
+  color: #e50914;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.favoritos__perfil h3::before {
+  content: "💖";
+  font-size: 1.2rem;
+}
+
+/* 📭 Estado vacío */
+.favoritos-vacio {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+}
+
+.icono-vacio {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.favoritos-vacio p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.texto-secundario {
+  font-size: 0.9rem !important;
+  color: #666 !important;
+}
+
+.btn-explorar {
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-explorar:hover {
+  background: #f40612;
+}
+
+/* 🎬 Secciones de favoritos */
+.seccion-favoritos {
+  margin-bottom: 2rem;
+}
+
+.subtitulo-favoritos {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #e50914;
+}
+
+/* 🎨 Grid de favoritos */
+.grid-favoritos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 🎯 Tarjeta individual de favorito */
+.tarjeta-favorito {
+  background: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.tarjeta-favorito:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(229, 9, 20, 0.3);
+}
+
+/* 🖼️ Imagen del favorito */
+.imagen-favorito {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imagen-favorito img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-favorito:hover .imagen-favorito img {
+  transform: scale(1.05);
+}
+
+/* 🎯 Overlay con botones */
+.overlay-favorito {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tarjeta-favorito:hover .overlay-favorito {
+  opacity: 1;
+}
+
+/* 🎬 Botones del overlay */
+.btn-reproducir-favorito,
+.btn-quitar-favorito {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 80px;
+}
+
+.btn-reproducir-favorito:hover {
+  background: #f40612;
+  transform: scale(1.05);
+}
+
+.btn-quitar-favorito {
+  background: #666;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.btn-quitar-favorito:hover {
+  background: #e50914;
+  transform: scale(1.05);
+}
+
+/* 📝 Información del favorito */
+.info-favorito {
+  padding: 1rem;
+}
+
+.titulo-favorito {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.año-favorito {
+  color: #999;
+  font-size: 0.8rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.genero-favorito {
+  color: #e50914;
+  font-size: 0.75rem;
+  margin: 0;
+  font-weight: 500;
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .grid-favoritos {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .imagen-favorito {
+    height: 160px;
+  }
+
+  .info-favorito {
+    padding: 0.8rem;
+  }
+
+  .titulo-favorito {
+    font-size: 0.8rem;
+  }
+
+  .btn-reproducir-favorito,
+  .btn-quitar-favorito {
+    padding: 6px 12px;
+    font-size: 11px;
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-favoritos {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .imagen-favorito {
+    height: 140px;
+  }
+
+  .favoritos__perfil {
+    padding: 1rem;
+  }
+
+  .favoritos__perfil h3 {
+    font-size: 1.3rem;
+  }
+
+  .subtitulo-favoritos {
+    font-size: 1rem;
+  }
+}
+
+/* 🎨 Animaciones adicionales */
+@keyframes aparecer-favorito {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tarjeta-favorito {
+  animation: aparecer-favorito 0.5s ease forwards;
+}
+
+/* 🎯 Efecto de carga */
+.favoritos__perfil.cargando {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.favoritos__perfil.cargando::after {
+  content: "Cargando favoritos...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+}
 
 
 /*Media query de registro de usuario*/

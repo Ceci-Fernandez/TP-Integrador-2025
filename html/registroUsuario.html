@@ -40,44 +40,14 @@
                 <h2 class="registro__titulo">Método de Pago</h2>
 
                 <h3 class="registro__subtitulo">Elegí tu plan</h3>
-                <div class="registro__planes">
-                    <label class="registro__plan">
-                        <input type="radio" name="plan" value="basico" required>
-                        <span class="registro__plan-label">Básico</span>
-                    </label>
-                    <label class="registro__plan">
-                        <input type="radio" name="plan" value="estandar">
-                        <span class="registro__plan-label">Estándar</span>
-                    </label>
-                    <label class="registro__plan plan-premium">
-                        <input type="radio" name="plan" value="premium">
-                        <span class="registro__plan-label">Premium</span>
-                    </label>
-                </div>
+                <div class="registro__planes" id="planesContainer"> </div>
 
                 <h3 class="registro__subtitulo">Elegí tu forma de pago</h3>
                 <p class="registro__mensaje">
                     Tu forma de pago está encriptada. <strong>Transacciones seguras y confiables.</strong>
                 </p>
 
-                <div class="registro__tarjetas">
-                    <label class="registro__tarjeta">
-                        <input type="radio" name="tarjeta" value="naranja" required>
-                        <img class="img_tarjeta"  src="/img/img-tarjetas/tarjeta-naranja@2x.png" alt="Tarjeta Naranja">
-                    </label>
-                    <label class="registro__tarjeta">
-                        <input type="radio" name="tarjeta" value="mastercard">
-                        <img class="img_tarjeta" src="/img/img-tarjetas/mastercard@2x.png" alt="Mastercard">
-                    </label>
-                    <label class="registro__tarjeta">
-                        <input type="radio" name="tarjeta" value="visa">
-                        <img class="img_tarjeta"  src="/img/img-tarjetas/visa@2x.png" alt="Visa">
-                    </label>
-                    <label class="registro__tarjeta">
-                        <input type="radio" name="tarjeta" value="cabal">
-                        <img class="img_tarjeta"  src="/img/img-tarjetas/cabal@2x.png" alt="Cabal">
-                    </label>
-                </div>
+                <div class="registro__tarjetas" id="metodosPago"> </div>
 
                 <div class="datos__tarjeta">
                     <h3>Ingresá los datos de tu tarjeta de débito o crédito</h3>
@@ -89,7 +59,8 @@
                         <input type="number" name="cod" id="cod" required placeholder="CVV">
                     </div>
 
-                    <input type="text" name="nombre_tarjeta" id="nombre_tarjeta" required placeholder="Nombre en la tarjeta">
+                    <input type="text" name="nombre_tarjeta" id="nombre_tarjeta" required
+                        placeholder="Nombre en la tarjeta">
 
                     <div class="contenedor-btn__registro">
                         <button class="btn" type="submit">Iniciar membresía</button>
@@ -116,23 +87,29 @@
                 <ul>
                     <li><a href="../index.html">Catálogo</a></li>
                     <li><a href="../index.html">Tendencias</a></li>
-                    <li><a href="perfilUsuario.html">Perfil</a></li>
+                 
                 </ul>
             </div>
             <div class="columna_footer-redes">
                 <p>Redes Sociales</p>
                 <ul class="redes__footer">
-                    <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="/img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="/img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
-                    <li><a href="https://www.youtube.com/c/unlamoficial"><img src="/img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
-                    <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="/img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
-                    <li><a href="https://x.com/UnlamOficial"><img src="/img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img
+                                src="/img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img
+                                src="/img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/c/unlamoficial"><img src="/img/iconos redes/youtube.png"
+                                alt="Logo-YouTube"></a></li>
+                    <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img
+                                src="/img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
+                    <li><a href="https://x.com/UnlamOficial"><img src="/img/iconos redes/gorjeo.png"
+                                alt="Logo-Twitter"></a></li>
                 </ul>
             </div>
         </div>
         <p class="copyright">Copyright © 2025 - by Cila Movie</p>
     </footer>
-        <script src="/js/registroUsuario.js" defer></script>
+    <script src="/js/registroUsuario.js" defer></script>
+    <script src="/js/navegacion.js"></script>
 </body>
 
 </html>

@@ -3,121 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cila movies - mario bros.</title>
+  <title id="page-title">CILA Movies - Cargando...</title>
   <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/detallePelicula.css">
 </head>
 <body>
 
   <header class="header">
-    <a href="/index.html"> <h1 class="header__h1">CILA MOVIES</h1></a>
+    <a href="../index.html"> 
+      <h1 class="header__h1">CILA MOVIES</h1>
+    </a>
     <nav class="header__nav">
       <ul class="header__ul">
-        <li class="header__li"><a href="/index.html">Home</a></li>
-        <li class="header__li"><a href="/index.html#catalogo">Catalogo</a></li>
-        <li class="header__li"><a href="/index.html#tendencias">Tendencias</a></li>
-        <li class="header__li btn"><a href="/html/perfilUsuario.html">Perfil</a></li>
+        <li class="header__li"><a href="../index.html">Home</a></li>
+        <li class="header__li"><a href="../index.html#catalogo">Catálogo</a></li>
+        <li class="header__li"><a href="../index.html#tendencias">Tendencias</a></li>
+        <li class="header__li btn"><a href="../html/perfilUsuario.html">Perfil</a></li>
       </ul>
     </nav>
-    
   </header>
-<main>
-  <section class="container">
-    <!-- Iframe con trailer -->
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/TnGl01FkMMo" title="Trailer Super Mario" allowfullscreen></iframe>
 
-    
-    <div class="info">
-      <h2>Super Mario Bros. Movie (2023)</h2>
-      <p><strong>Duracion:</strong> 1h 32min</p>
-      <p><strong>Genero:</strong> Animacion, Aventura, Comedia</p>
-      <p><strong>Actores:</strong>
-        <a href="https://es.wikipedia.org/wiki/Chris_Pratt" target="_blank">Chris Pratt</a>,
-        <a href="https://es.wikipedia.org/wiki/Anya_Taylor-Joy" target="_blank">Anya Taylor-Joy</a>,
-        <a href="https://es.wikipedia.org/wiki/Jack_Black" target="_blank">Jack Black</a>
-      </p>
-      <p><strong>Resumen:</strong> Mario y Luigi, dos fontaneros de Brooklyn, son transportados a un mundo mágico donde deben rescatar a la Princesa Peach y enfrentarse al malvado Bowser.</p>
-
-      
-      <a class="button" href="https://www.youtube.com/watch?v=TnGl01FkMMo" target="_blank">Comenzar</a>
+  <main id="main-content">
+    <!-- Loading state -->
+    <div id="loading-state" class="loading-container">
+      <div class="loading-spinner"></div>
+      <p>Cargando película...</p>
     </div>
-  </section>
 
-  <section class="similares">
-
-   <h2>Similares</h2> 
-      
-
-  <div class="container">
-    
-    <div class="card-container">
-
-      <div class="card">
-       
-        <a href="https://www.youtube.com/watch?v=ykLTd5aTa88">
-          <img src="../img/peliculas/minecraft-the-movie.jpg" alt="Minecraft">
-        </a>
+    <!-- Error state -->
+    <div id="error-state" class="error-container" style="display: none;">
+      <div class="error-content">
+        <h2>🎬 Película no encontrada</h2>
+        <p>Lo sentimos, no pudimos encontrar la película que buscas.</p>
+        <a href="../index.html" class="btn btn-primary">Volver al inicio</a>
       </div>
-
-      <div class="card">
-        <a href="https://www.youtube.com/watch?v=ykLTd5aTa88">
-        <img src="../img/peliculas/mision-imposible.jpg" alt="mision imposible">
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="https://www.youtube.com/watch?v=ykLTd5aTa88">
-        <img src="../img/peliculas/las-cuatro-estaciones.jpg" alt="las cuatro estaciones">
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="https://www.youtube.com/watch?v=ykLTd5aTa88">
-       <img src="../img/peliculas/django-unchained.jpg" alt="django">
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="https://www.youtube.com/watch?v=ykLTd5aTa88">
-        <img src="../img/peliculas/rick-y-morty.jpg" alt="rick y morty">
-        </a>
-      </div>
-
     </div>
-  </div>
-</section>
 
+    <!-- Content will be dynamically generated here -->
+    <div id="pelicula-content" style="display: none;">
+      <!-- Dynamic content goes here -->
+    </div>
   </main>
-   <footer class="footer">
-        <div class="columna_footer">
-            <p> Integrantes del grupo</p>
-            <ul>
-                <li>Adrian Amarilla</li>
-                <li>Cecilia Fernandez</li>
-                <li>Ivan Yankauska</li>
-                <li>Luca Martinez</li>
-            </ul>
-        </div>
-        <div class="columna_footer">
-            <p>Home</p>
-            <ul>
-                <li><a href="../index.html">Catalogo</a></li>
-                <li><a href="../index.html">Tendencias</a></li>
-                <li><a href="perfilUsuario.html">Perfil</a></li>
-            </ul>
-        </div>
-        <div class="columna_footer-redes">
-            <p>Redes Sociales</p>
-            <ul class="redes__footer">
 
-                <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="../img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
-                <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
-                <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
-                <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
-                <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
-            </ul>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="columna_footer">
+        <p>Integrantes del grupo</p>
+        <ul>
+            <li>Adrian Amarilla</li>
+            <li>Cecilia Fernandez</li>
+            <li>Ivan Yankauska</li>
+            <li>Luca Martinez</li>
+        </ul>
+    </div>
+    <div class="columna_footer">
+        <p>Home</p>
+        <ul>
+            <li><a href="../index.html">Catálogo</a></li>
+            <li><a href="../index.html">Tendencias</a></li>
+        </ul>
+    </div>
+    <div class="columna_footer-redes">
+        <p>Redes Sociales</p>
+        <ul class="redes__footer">
+            <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="../img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
+            <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
+            <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
+            <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
+            <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
+        </ul>
+    </div>
+  </footer>
 
-
+  <!-- Scripts -->
+  <script src="../js/catalogo-peliculas-series.js"></script>
+  <script src="../js/navegacion.js"></script>
+  <script src="../js/detallePelicula.js"></script>
 </body>
 </html>
