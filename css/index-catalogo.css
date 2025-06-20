@@ -84,6 +84,10 @@
   font-size: 14px;
   color: #ccc;
 }
+.catalogo__h2{
+  color: white;
+  padding: 2em;
+}
 
 .calificacion {
   font-size: 12px;

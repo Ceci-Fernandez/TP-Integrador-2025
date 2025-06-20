@@ -339,6 +339,79 @@
   font-size: 0.9rem;
 }
 
+
+/* SERIES */
+.similares {
+  background-color: #050a30;
+  padding: 40px 20px;
+  color: #ffffff; /* Texto blanco */
+}
+
+.temporadas {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  margin: 1em;
+}
+
+.temporadas span,
+.temporadas a {
+  color: #ffffff !important; /* Texto blanco para temporadas */
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.temporadas .aseleccionada {
+  color: #ffffff !important;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.temporadas span:hover,
+.temporadas a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Arreglar texto de temporada info */
+.temporada-info {
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.temporada-info h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.temporada-info p {
+  color: #cccccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-ver-temporada {
+  background-color: #233dff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-ver-temporada:hover {
+  background-color: #1a2ecc;
+}
+
+
 /* 📱 RESPONSIVE */
 @media (max-width: 768px) {
   .carrusel-item {

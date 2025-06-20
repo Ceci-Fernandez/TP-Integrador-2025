@@ -225,6 +225,34 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg",
       calificacion: 9.5,
       trailer: "https://www.youtube.com/watch?v=HhesaQXLuRY",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "Pilot",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTQ2NDkwNDk5NV5BMl5BanBnXkFtZTcwNDM5MTMzOQ@@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "Cat's in the Bag...",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTgyMzI5NDc5Nl5BMl5BanBnXkFtZTcwMjM5MTMzOQ@@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "...And the Bag's in the River",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTMzODMxOTU1M15BMl5BanBnXkFtZTcwMzM5MTMzOQ@@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "Cancer Man",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BMTQwMTQ3MjUtMzY4ZC00YjkwLWJkNTYtNzM4MDI1ZjMwNzZmXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "Gray Matter",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTkwODQxMDgzOV5BMl5BanBnXkFtZTcwNjM5MTMzOQ@@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-2",
@@ -247,6 +275,33 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
       calificacion: 9.3,
       trailer: "https://www.youtube.com/watch?v=rlR4PJn8b8I",
+    capitulos: [
+  {
+    numero: 1,
+    titulo: "Winter Is Coming",
+    imagen: "/placeholder.svg?height=200&width=300",
+  },
+  {
+    numero: 2,
+    titulo: "The Kingsroad",
+    imagen: "/placeholder.svg?height=200&width=300",
+  },
+  {
+    numero: 3,
+    titulo: "Lord Snow",
+    imagen: "/placeholder.svg?height=200&width=300",
+  },
+  {
+    numero: 4,
+    titulo: "Cripples, Bastards, and Broken Things",
+    imagen: "/placeholder.svg?height=200&width=300",
+  },
+  {
+    numero: 5,
+    titulo: "The Wolf and the Lion",
+    imagen: "/placeholder.svg?height=200&width=300",
+  },
+],
     },
     {
       id: "serie-3",
@@ -269,6 +324,33 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BN2ZmYjg1YmItNWQ4OC00YWM0LWE0ZDktYThjOTZiZjhhN2Q2XkEyXkFqcGdeQXVyNjgxNTQ3Mjk@._V1_.jpg",
       calificacion: 8.7,
       trailer: "https://www.youtube.com/watch?v=b9EkMc79ZSU",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "The Vanishing of Will Byers",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "The Weirdo on Maple Street",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTQxOTYzNTMxM15BMl5BanBnXkFtZTgwODAxMzYzOTE@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "Holly, Jolly",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTYxMTg3MTMxNl5BMl5BanBnXkFtZTgwOTAxMzYzOTE@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "The Body",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTcxMTg3MTMxNl5BMl5BanBnXkFtZTgwOTExMzYzOTE@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "Chapter Five: Dig Dug",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTgxMTg3MTMxNl5BMl5BanBnXkFtZTgwOTIxMzYzOTE@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-4",
@@ -291,6 +373,33 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BZmY0MzBlNjctYjc4Ny00ODBmLTg4NWEtNjY2ZmZhYzEyN2RmXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_.jpg",
       calificacion: 8.6,
       trailer: "https://www.youtube.com/watch?v=JWtnJjn6ng0",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "Wolferton Splash",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTYxNzc2NDQyNV5BMl5BanBnXkFtZTgwNzE1MzE2OTE@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "Hyde Park Corner",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTc0NzY2NDQyNV5BMl5BanBnXkFtZTgwODE1MzE2OTE@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "Windsor",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTg0NzY2NDQyNV5BMl5BanBnXkFtZTgwOTE1MzE2OTE@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "Act of God",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTk0NzY2NDQyNV5BMl5BanBnXkFtZTgwOTI1MzE2OTE@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "Smoke and Mirrors",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTl0NzY2NDQyNV5BMl5BanBnXkFtZTgwOTM1MzE2OTE@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-5",
@@ -313,6 +422,33 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg",
       calificacion: 8.9,
       trailer: "https://www.youtube.com/watch?v=LHOtME2DL4g",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "Pilot",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTgxMzk0MjkxNl5BMl5BanBnXkFtZTcwOTE5MzUyMw@@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "Diversity Day",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTk4MzQ0MjkxNl5BMl5BanBnXkFtZTcwOTI5MzUyMw@@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "Health Care",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTl4MzQ0MjkxNl5BMl5BanBnXkFtZTcwOTM5MzUyMw@@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "The Alliance",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTm4MzQ0MjkxNl5BMl5BanBnXkFtZTcwOTQ5MzUyMw@@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "Basketball",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMTn4MzQ0MjkxNl5BMl5BanBnXkFtZTcwOTU5MzUyMw@@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-6",
@@ -337,6 +473,38 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
       calificacion: 8.9,
       trailer: "https://www.youtube.com/watch?v=hDNNmeeJs1Q",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "The One Where Monica Gets a Roommate",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BNTg0NjEwNjMtYzVlMS00YzQ0LWIzYWEtZWZmYjE2OTBhMjdkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "The One with the Sonogram at the End",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BNjE0NjEwNjMtYzVlMS00YzQ0LWIzYWEtZWZmYjE2OTBhMjdkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "The One with the Thumb",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BNzE0NjEwNjMtYzVlMS00YzQ0LWIzYWEtZWZmYjE2OTBhMjdkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "The One with George Stephanopoulos",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BODE0NjEwNjMtYzVlMS00YzQ0LWIzYWEtZWZmYjE2OTBhMjdkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "The One with the East German Laundry Detergent",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BOTE0NjEwNjMtYzVlMS00YzQ0LWIzYWEtZWZmYjE2OTBhMjdkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-7",
@@ -359,6 +527,38 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BN2M5YWFjN2YtYzU2YS00NzBlLTgwZWUtYWQzNWFhNDkyYjg3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
       calificacion: 8.8,
       trailer: "https://www.youtube.com/watch?v=aOC8E8z_ifw",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "The Mandalorian",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BN2ZkMDJjMjUtM2M2Ni00YzI4LWJmNWUtYmJkNDQyNzUwMzQyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "The Child",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BNzZkMDJjMjUtM2M2Ni00YzI4LWJmNWUtYmJkNDQyNzUwMzQyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "The Sin",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BODZkMDJjMjUtM2M2Ni00YzI4LWJmNWUtYmJkNDQyNzUwMzQyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "Sanctuary",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BOTZkMDJjMjUtM2M2Ni00YzI4LWJmNWUtYmJkNDQyNzUwMzQyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "The Gunslinger",
+          imagen:
+            "https://m.media-amazon.com/images/M/MV5BMDZkMDJjMjUtM2M2Ni00YzI4LWJmNWUtYmJkNDQyNzUwMzQyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-8",
@@ -381,6 +581,33 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BMWY3NTljMjEtYzRiMi00NWM2LTkzNjItZTVmZjE0MTdjMjJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ4NTc5OTU@._V1_.jpg",
       calificacion: 9.1,
       trailer: "https://www.youtube.com/watch?v=xK7S9mrFWL4",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "A Study in Pink",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMjQwMTg4MjI0N15BMl5BanBnXkFtZTcwNjc3NjM5Mw@@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "The Blind Banker",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMjUwMTg4MjI0N15BMl5BanBnXkFtZTcwNzc3NjM5Mw@@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "The Great Game",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMjYwMTg4MjI0N15BMl5BanBnXkFtZTcwODc3NjM5Mw@@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "A Scandal in Belgravia",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMjcwMTg4MjI0N15BMl5BanBnXkFtZTcwOTc3NjM5Mw@@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "The Hounds of Baskerville",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMjgwMTg4MjI0N15BMl5BanBnXkFtZTcwMDQ3NjM5Mw@@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-9",
@@ -403,6 +630,33 @@ const catalogoCompleto = {
         "https://m.media-amazon.com/images/M/MV5BN2FiOWU4YzYtMzZiOS00MzcyLTlkOGEtOTgwZmEwMzAxMzA3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
       calificacion: 8.2,
       trailer: "https://www.youtube.com/watch?v=ndl1W4ltcmg",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "The End's Beginning",
+          imagen: "https://m.media-amazon.com/images/M/MV5BNjE1NDI2NjI2NF5BMl5BanBnXkFtZTgwNjcyODg5NzM@._V1_.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "Four Marks",
+          imagen: "https://m.media-amazon.com/images/M/MV5BNzE1NDI2NjI2NF5BMl5BanBnXkFtZTgwNzc5ODg5NzM@._V1_.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "Betrayer Moon",
+          imagen: "https://m.media-amazon.com/images/M/MV5BODE1NDI2NjI2NF5BMl5BanBnXkFtZTgwODc5ODg5NzM@._V1_.jpg",
+        },
+        {
+          numero: 4,
+          titulo: "Of Banquets, Bastards and Burials",
+          imagen: "https://m.media-amazon.com/images/M/MV5BOTE1NDI2NjI2NF5BMl5BanBnXkFtZTgwOTc5ODg5NzM@._V1_.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "Bottled Appetites",
+          imagen: "https://m.media-amazon.com/images/M/MV5BMjA1NDI2NjI2NF5BMl5BanBnXkFtZTgwMDQ5ODg5NzM@._V1_.jpg",
+        },
+      ],
     },
     {
       id: "serie-10",
@@ -421,14 +675,41 @@ const catalogoCompleto = {
       ],
       resumen:
         "Adaptación de la icónica historieta argentina de Héctor Germán Oesterheld. Juan Salvo y sus amigos enfrentan una invasión alienígena que comienza con una misteriosa nevada mortal en Buenos Aires.",
-      imagen: "/img/peliculas/eleternauta1280x720.jpg", // 🎯 USANDO TU IMAGEN EXISTENTE
+      imagen: "/img/peliculas/eleternauta1280x720.jpg",
       calificacion: 8.4,
-      trailer: "https://www.youtube.com/watch?v=eternauta-trailer",
+      trailer: "https://www.youtube.com/watch?v=sfAc2U20uyg",
+      capitulos: [
+        {
+          numero: 1,
+          titulo: "La Nevada",
+          imagen: "https://pics.filmaffinity.com/El_eternauta_Serie_de_TV-180653043-large.jpg",
+        },
+        {
+          numero: 2,
+          titulo: "Los Invasores",
+          imagen: "https://www.cinemascomics.com/wp-content/uploads/2024/09/el-eternauta-netflix-1.jpg",
+        },
+        {
+          numero: 3,
+          titulo: "La Resistencia",
+          imagen: "https://media.tycsports.com/files/2024/09/11/735181/el-eternauta_1440x810_wmk.webp",
+        },
+        {
+          numero: 4,
+          titulo: "Los Gurbos",
+          imagen: "https://www.infobae.com/new-resizer/v2/HQXPJLVHPJGQHKWQZQZQZQZQZQ.jpg",
+        },
+        {
+          numero: 5,
+          titulo: "El Contraataque",
+          imagen: "https://www.cronista.com/files/image/449/449623/6243c8b8c8b8c.jpg",
+        },
+      ],
     },
   ],
 }
 
-// 🎯 FUNCIONES PARA MANEJAR EL CATÁLOGO (sin cambios)
+// 🎯 FUNCIONES PARA MANEJAR EL CATÁLOGO
 function crearEnlaceActor(actor) {
   return `<a href="${actor.wikipedia}" target="_blank" rel="noopener noreferrer" class="actor-link">${actor.nombre}</a>`
 }
