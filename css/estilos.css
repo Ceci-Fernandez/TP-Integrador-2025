@@ -762,6 +762,41 @@ iframe {
   margin: 1em;
 }
 
+/* carrusel */
+
+.carrusel-estilo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1em;
+}
+
+.card {
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+.boton_izquierda,
+.boton_derecha {
+  background-color: #b93210;
+  color: blueviolet;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+
+
 @media (max-width: 600px) {
   .container {
     flex-direction: column;

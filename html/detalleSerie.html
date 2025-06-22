@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cila movies - The walking dead </title>
   <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/serie.js"></script>
+
+
 </head>
 <body>
 
@@ -44,17 +47,19 @@
   </section>
 
  
-  <section class="similares">
+  <section id = "temporadas" class="similares">
 
-    <div class="temporadas"><span class="aseleccionada" >Temporada 1</span>
-    <a  href="#">Temporada 2 </a>
-    <a  href="#">Temporada 3 </a>
+    <div value = 1 class="temporadas"><span class="aseleccionada" >Temporada 1</span>
+    <a value = 2 href="#">Temporada 2 </a>
+    <a value = 3 href="#">Temporada 3 </a>
   
     </div>
 
   <div class="container">
     
-    <div class="card-container">
+    <div id="carrusel" class="carrusel">
+
+      <button class="boton-izquierda"><-</button>
 
       <div class="card">
         <p>Capitulo 1</p>
@@ -91,6 +96,8 @@
         </a>
       </div>
 
+      <button class="boton-derecha">-></button>
+
     </div>
   </div>
 </section>
@@ -99,11 +106,13 @@
 
    <h2>Similares</h2> 
       
+   <div class="carrusel-estilo">
 
   <div class="container">
     
-    <div class="card-container">
+    <div id = "carrusel" class="carrusel">
 
+      <button class="boton-izquierda"><-</button>
       <div class="card">
        
         <a href="https://www.youtube.com/watch?v=HhesaQXLuRY">
@@ -134,8 +143,9 @@
         <img src="../img/peliculas/rick-y-morty.jpg" alt="rick y morty">
         </a>
       </div>
-
+         <button class="boton-derecha">-></button>
     </div>
+  </div>
   </div>
 </section>
 
