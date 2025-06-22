@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancelación - CILA MOVIES</title>
+    <title>Recuperar Contraseña - CILA MOVIES</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/cancelacion.css">
+    <link rel="stylesheet" href="../css/recuperar.css">
 </head>
 
-<body>
-    <main class="cancelacion">
-        <section class="container-mensaje__cancelacion">
-            <h1>Cancelaste tu suscripción. Lamentamos que te vayas 😢</h1>
-            <p>Gracias por usar nuestro servicio. Esperamos verte pronto.</p>
-            <div class="container-btn-redireccion__cancelacion">
-                <a class="btn" href="../index.html">Home</a>
-            </div>
-        </section>
+<body class="fondo_de_recuperar">
+    <header class="header">
+        <a href="../index.html">
+            <h1 class="header_log">CILA MOVIES</h1>
+        </a>
+    </header>
+    
+    <main class="main_recuperar">
+        <div class="recuperar_box">
+            <h2 class="titulo_recuperar">Recuperar contraseña</h2>
+            <p>Enviaremos un correo electrónico con instrucciones sobre cómo restablecer su contraseña.</p>
+
+            <form id="recuperar-form">
+                <input class="input_login" type="email" id="email" placeholder="Correo electrónico" required>
+                <input class="input_login" type="text" id="usuario" placeholder="Nombre de usuario" required>
+                
+                <div id="error-message" class="error-message hidden"></div>
+                <div id="success-message" class="success-message hidden"></div>
+                
+                <button class="btn" type="submit" id="recuperar-btn" disabled>Enviar email</button>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="columna_footer">
-            <p>Integrantes</p>
+            <p>Integrantes del grupo</p>
             <ul>
                 <li>Adrian</li>
                 <li>Cecilia</li>
@@ -48,5 +61,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="../js/recuperar.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+.cancelacion {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-base);
+}
+
+.container-mensaje__cancelacion {
+  width: 50%;
+  padding: 2em;
+  background-color: var(--color-base);
+  border-radius: 1em;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  color: var(--color-claro);
+}

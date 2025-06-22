@@ -1,0 +1,35 @@
+.recuperar_box {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 20%;
+  font-size: 125%;
+  gap: 2rem;
+}
+
+.imagen_recuperar {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.main_recuperar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titulo_recuperar {
+  color: #000;
+  font-size: 125%;
+}
+
+.recuperar_lista {
+  display: grid;
+  gap: 2rem;
+}
+
+.fondo_de_recuperar {
+  background-image: url(../img/fondo\ de\ recuperar\ contraseña.jpg);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">CILA MOVIES - Serie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/detalle.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="../index.html"> 
+      <h1 class="header__h1">CILA MOVIES</h1>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__li"><a href="../index.html">Home</a></li>
+        <li class="header__li"><a href="../index.html">Películas</a></li>
+        <li class="header__li"><a href="../index.html">Series</a></li>
+        <li class="header__li" id="auth-section">
+          <a href="login.html" class="header__li-btn">Iniciar Sesión</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+ 
+<main>
+  <section class="container">
+    <iframe width="360" height="215" id="trailer-iframe" title="Trailer" allowfullscreen></iframe>
+
+    <div class="info">
+      <h2 id="episode-title">Cargando...</h2>
+      <p><strong>Duración:</strong> <span id="series-duration">-</span></p>
+      <p><strong>Género:</strong> <span id="series-genre">-</span></p>
+      <p id="series-actors"><strong>Actores:</strong> <span>-</span></p>
+      <p><strong>Resumen:</strong> <span id="series-summary">-</span></p>
+
+      <div class="season-selector">
+        <label for="season-select">Temporada:</label>
+        <select id="season-select" onchange="changeSeason()">
+          <!-- Se cargan dinámicamente -->
+        </select>
+
+        <label for="episode-select">Capítulo:</label>
+        <select id="episode-select" onchange="changeEpisode()">
+          <!-- Se cargan dinámicamente -->
+        </select>
+      </div>
+
+      <button class="button" onclick="watchEpisode()">Comenzar</button>
+      <button id="favorite-btn" class="favorite-btn" onclick="toggleFavoriteFromDetail()">
+        <i class="bi bi-heart" id="favorite-icon"></i> Favorito
+      </button>
+    </div>
+  </section>
+
+  <section class="similares">
+    <div class="temporadas" id="seasons-tabs">
+      <!-- Se generan dinámicamente -->
+    </div>
+
+    <div class="container">
+      <div class="card-container" id="episodes-container">
+        <!-- Se cargarán dinámicamente -->
+      </div>
+    </div>
+  </section>
+
+  <section class="similares">
+   <h2>Similares</h2> 
+
+  <div class="container">
+    <div class="card-container" id="similar-series">
+      <!-- Se cargan dinámicamente -->
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="columna_footer">
+      <p> Integrantes del grupo</p>
+      <ul>
+          <li>Adrian Amarilla</li>
+          <li>Cecilia Fernandez</li>
+          <li>Ivan Yankauska</li>
+          <li>Luca Martinez</li>
+      </ul>
+  </div>
+  <div class="columna_footer">
+      <p>Navegación</p>
+      <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">Películas</a></li>
+          <li><a href="../index.html">Series</a></li>
+          <li id="footer-auth">
+            <a href="login.html">Iniciar Sesión</a>
+          </li>
+      </ul>
+  </div>
+  <div class="columna_footer-redes">
+      <p>Redes Sociales</p>
+      <ul class="redes__footer">
+          <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="../img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
+          <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
+          <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
+          <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
+          <li><a href="https://x.com/UnlamOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
+      </ul>
+  </div>
+</footer>
+<script src="../js/catalogo-peliculas-series.js"></script>
+<script src="../js/detalle-serie.js"></script>
+</body>
+</html>

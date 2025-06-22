@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor - CILA MOVIES</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reproductor.css">
+</head>
+<body>
+    <div class="reproductor">
+        <div class="reproductor__container">
+            <iframe 
+                class="reproductor__video" 
+                id="video-player"
+                title="Video Player" 
+                allowfullscreen
+                allow="autoplay; encrypted-media">
+            </iframe>
+
+            <div class="reproductor__info">
+                <h1 class="reproductor__titulo" id="video-title">Cargando...</h1>
+
+                <div class="reproductor__controles">
+                    <a href="../index.html" class="btn">Volver al inicio</a>
+                    <button class="btn" onclick="window.close()">Cerrar reproductor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/reproductor.js"></script>
+</body>
+</html>
