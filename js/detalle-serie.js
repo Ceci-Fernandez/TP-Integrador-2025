@@ -3,15 +3,6 @@ let episodioActual = 1
 let serieActual = null
 let usuarioActual = null
 
-// Importar catálogos unificados desde catalogo.js
-// Los catálogos se cargan desde el archivo catalogo.js incluido en el HTML
-
-// Declaración de variables globales (simulando la carga desde catalogo.js)
-const catalogoSeries = {}
-const temporadas = {}
-const allMovies = []
-const similaresFiltradas = []
-
 document.addEventListener("DOMContentLoaded", () => {
   verificarEstadoLogin()
   cargarDetalleSerie()
@@ -53,10 +44,12 @@ function cargarDetalleSerie() {
 
   serieActual = idSerie
 
-  const serie = catalogoSeries[idSerie]
+  const serie = window.catalogoSeries[idSerie]
   if (!serie) {
     document.getElementById("episode-title").textContent = "Serie no encontrada"
     document.getElementById("page-title").textContent = "CILA MOVIES - Serie no encontrada"
+    console.log("Serie no encontrada para ID:", idSerie)
+    console.log("Catálogo disponible:", Object.keys(window.catalogoSeries))
     return
   }
 
@@ -90,7 +83,7 @@ function generarTabsTemporadas() {
   const contenedorTemporadas = document.getElementById("seasons-tabs")
   contenedorTemporadas.innerHTML = ""
 
-  const temporadasSerie = temporadas[serieActual]
+  const temporadasSerie = window.temporadas[serieActual]
   if (!temporadasSerie) return
 
   Object.keys(temporadasSerie).forEach((numTemporada, index) => {
@@ -109,7 +102,7 @@ function cargarSelectorEpisodios() {
 
   // Cargar selector de temporadas
   selectorTemporadas.innerHTML = ""
-  const temporadasSerie = temporadas[serieActual]
+  const temporadasSerie = window.temporadas[serieActual]
   if (temporadasSerie) {
     Object.keys(temporadasSerie).forEach((numTemporada) => {
       const opcion = document.createElement("option")
@@ -137,20 +130,20 @@ function cargarEpisodios() {
   const contenedor = document.getElementById("episodes-container")
   contenedor.innerHTML = ""
 
-  const temporadasSerie = temporadas[serieActual]
+  const temporadasSerie = window.temporadas[serieActual]
   const cantidadEpisodios = temporadasSerie[temporadaActual]?.episodios || 0
 
   // Obtener la imagen de la serie actual
-  const serie = catalogoSeries[serieActual]
+  const serie = window.catalogoSeries[serieActual]
   const imagenSerie = serie ? serie.imagen : "../img/img-twd-serie/capi1.avif"
 
   for (let i = 1; i <= cantidadEpisodios; i++) {
     const elementoEpisodio = document.createElement("div")
-    elementoEpisodio.className = "card"
+    elementoEpisodio.className = "episode-card"
     elementoEpisodio.innerHTML = `
-      <p>Capítulo ${i}</p>
       <a href="#" onclick="seleccionarEpisodio(${i})">
         <img src="${imagenSerie}" alt="Capítulo ${i}">
+        <p>Capítulo ${i}</p>
       </a>
     `
     contenedor.appendChild(elementoEpisodio)
@@ -161,19 +154,45 @@ function cargarSeriesSimilares() {
   const contenedorSimilares = document.getElementById("similar-series")
   contenedorSimilares.innerHTML = ""
 
-  // Usar el catálogo unificado allMovies para obtener solo series
-  const todasLasSeries = allMovies.filter((movie) => movie.type === "serie")
+  // Filtrar solo series y excluir la actual
+  const todasLasSeries = window.allMovies.filter((movie) => movie.type === "serie")
+  const similaresFiltradas = todasLasSeries.filter((s) => s.id !== serieActual).slice(0, 8)
 
-  similaresFiltradas.forEach((serie) => {
-    const tarjetaSerie = document.createElement("div")
-    tarjetaSerie.className = "card"
-    tarjetaSerie.innerHTML = `
-      <a href="detalle-serie.html?id=${serie.id}">
-        <img src="${serie.image}" alt="${serie.title}">
-        <p>${serie.title}</p>
-      </a>
-    `
-    contenedorSimilares.appendChild(tarjetaSerie)
+  // Crear estructura del carousel
+  const carouselHTML = `
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" onclick="scrollCarousel('similar-series-carousel', -1)">‹</button>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="similar-series-carousel">
+          ${similaresFiltradas
+            .map(
+              (serie) => `
+            <div class="carousel-item">
+              <a href="detalle-serie.html?id=${serie.id}">
+                <img src="${serie.image}" alt="${serie.title}">
+                <p>${serie.title}</p>
+              </a>
+            </div>
+          `,
+            )
+            .join("")}
+        </div>
+      </div>
+      <button class="carousel-btn next-btn" onclick="scrollCarousel('similar-series-carousel', 1)">›</button>
+    </div>
+  `
+
+  contenedorSimilares.innerHTML = carouselHTML
+}
+
+function scrollCarousel(carouselId, direction) {
+  const carousel = document.getElementById(carouselId)
+  const itemWidth = carousel.querySelector(".carousel-item").offsetWidth + 20 // 20px margin
+  const scrollAmount = itemWidth * 2 // Scroll 2 items at a time
+
+  carousel.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth",
   })
 }
 
@@ -216,7 +235,7 @@ function changeEpisode() {
 }
 
 function actualizarTituloEpisodio() {
-  const serie = catalogoSeries[serieActual]
+  const serie = window.catalogoSeries[serieActual]
   if (serie) {
     document.getElementById("episode-title").textContent =
       `${serie.titulo} - Temporada ${temporadaActual} Capítulo ${episodioActual}`
@@ -224,9 +243,9 @@ function actualizarTituloEpisodio() {
 }
 
 function watchEpisode() {
-  const temporadasSerie = temporadas[serieActual]
+  const temporadasSerie = window.temporadas[serieActual]
   const videoId = temporadasSerie[temporadaActual]?.videoId
-  const serie = catalogoSeries[serieActual]
+  const serie = window.catalogoSeries[serieActual]
   const titulo = `${serie.titulo} - Temporada ${temporadaActual} Capítulo ${episodioActual}`
 
   window.open(`reproductor.html?video=${videoId}&title=${encodeURIComponent(titulo)}`, "_blank")

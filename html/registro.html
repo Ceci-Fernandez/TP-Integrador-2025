@@ -6,6 +6,8 @@
     <title>Registrarse - CILA MOVIES</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -94,6 +96,11 @@
                     <div id="cvv-error" class="error-message hidden"></div>
 
                     <input type="text" name="nombreTarjeta" id="nombreTarjeta" placeholder="Nombre en la tarjeta" required>
+
+                       <!-- Métodos de pago alternativos dinámicos -->
+                    <div class="metodos-pago-adicionales" id="alternative-payments">
+                        <!-- Se generan dinámicamente -->
+                    </div>
 
                     <div class="contenedor-btn__registro">
                         <button class="btn" type="submit" id="registro-btn" disabled>Iniciar membresía</button>

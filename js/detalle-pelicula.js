@@ -28,25 +28,23 @@ function actualizarUIParaUsuarioLogueado() {
   footerAuth.innerHTML = '<a href="perfil.html">Perfil</a>'
 }
 
-// Importa los catálogos
-import { catalogoPeliculas, allMovies } from "./catalogo.js"
-
 function cargarDetallePelicula() {
   const parametrosURL = new URLSearchParams(window.location.search)
   const idPelicula = Number.parseInt(parametrosURL.get("id"))
 
   if (!idPelicula || isNaN(idPelicula)) {
     console.log("ID inválido:", parametrosURL.get("id"))
+    document.getElementById("movie-title").textContent = "Película no encontrada"
     return
   }
 
   peliculaActual = idPelicula
 
-  // Usar el catálogo unificado de catalogo.js
-  const pelicula = catalogoPeliculas[idPelicula]
+  // Buscar la película en el catálogo global
+  const pelicula = window.catalogoPeliculas[idPelicula]
   if (!pelicula) {
     console.log("Película no encontrada para ID:", idPelicula)
-    console.log("Catálogo disponible:", Object.keys(catalogoPeliculas))
+    document.getElementById("movie-title").textContent = "Película no encontrada"
     return
   }
 
@@ -77,27 +75,50 @@ function cargarPeliculasSimilares() {
   const contenedorSimilares = document.getElementById("similar-movies")
   contenedorSimilares.innerHTML = ""
 
-  // Usar el catálogo unificado allMovies para obtener solo películas
-  const todasLasPeliculas = allMovies.filter((movie) => movie.type === "pelicula")
+  // Filtrar solo películas y excluir la actual
+  const todasLasPeliculas = window.allMovies.filter((movie) => movie.type === "pelicula")
+  const similaresFiltradas = todasLasPeliculas.filter((p) => p.id !== peliculaActual).slice(0, 8)
 
-  // Filtrar excluyendo la película actual y tomar máximo 3
-  const similaresFiltradas = todasLasPeliculas.filter((p) => p.id !== peliculaActual).slice(0, 3)
+  // Crear estructura del carousel
+  const carouselHTML = `
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" onclick="scrollCarousel('similar-carousel', -1)">‹</button>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="similar-carousel">
+          ${similaresFiltradas
+            .map(
+              (pelicula) => `
+            <div class="carousel-item">
+              <a href="detalle-pelicula.html?id=${pelicula.id}">
+                <img src="${pelicula.image}" alt="${pelicula.title}">
+                <p>${pelicula.title}</p>
+              </a>
+            </div>
+          `,
+            )
+            .join("")}
+        </div>
+      </div>
+      <button class="carousel-btn next-btn" onclick="scrollCarousel('similar-carousel', 1)">›</button>
+    </div>
+  `
 
-  similaresFiltradas.forEach((pelicula) => {
-    const tarjetaPelicula = document.createElement("div")
-    tarjetaPelicula.className = "card"
-    tarjetaPelicula.innerHTML = `
-      <a href="detalle-pelicula.html?id=${pelicula.id}">
-        <img src="${pelicula.image}" alt="${pelicula.title}">
-        <p>${pelicula.title}</p>
-      </a>
-    `
-    contenedorSimilares.appendChild(tarjetaPelicula)
+  contenedorSimilares.innerHTML = carouselHTML
+}
+
+function scrollCarousel(carouselId, direction) {
+  const carousel = document.getElementById(carouselId)
+  const itemWidth = carousel.querySelector(".carousel-item").offsetWidth + 20 // 20px margin
+  const scrollAmount = itemWidth * 2 // Scroll 2 items at a time
+
+  carousel.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth",
   })
 }
 
 function watchMovie() {
-  const pelicula = catalogoPeliculas[peliculaActual]
+  const pelicula = window.catalogoPeliculas[peliculaActual]
   if (!pelicula) return
 
   window.open(`reproductor.html?video=${pelicula.trailer}&title=${encodeURIComponent(pelicula.titulo)}`, "_blank")

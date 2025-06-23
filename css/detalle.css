@@ -123,6 +123,131 @@ iframe {
   color: #000000;
 }
 
+/* EPISODIOS PEQUEÑOS - CORREGIDO */
+#episodes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0;
+  justify-content: flex-start;
+}
+
+.episode-card {
+  width: 120px;
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: scale(1.05);
+}
+
+.episode-card img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.episode-card p {
+  color: white;
+  font-size: 11px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.episode-card a {
+  text-decoration: none;
+  display: block;
+}
+
+.episode-card a:hover p {
+  color: #ffd700;
+}
+
+/* Carousel para similares - CORREGIDO */
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* IMPORTANTE: Evita desbordamiento */
+}
+
+.carousel-wrapper {
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 10px; /* Padding interno */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  flex: 0 0 180px; /* Más pequeño para que quepan más */
+  text-align: center;
+  min-width: 180px; /* Ancho mínimo */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 250px; /* Altura reducida */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-item p {
+  font-size: 12px;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  flex-shrink: 0; /* No se encoge */
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+/* Contenedor padre debe tener límites */
+#similar-movies,
+#similar-series {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
 /* MEDIA QUERIES MEJORADOS */
 
 /* Tablets grandes y laptops pequeñas */
@@ -186,6 +311,19 @@ iframe {
   .similares {
     padding: 20px 10px;
   }
+
+  /* RESPONSIVE PARA EPISODIOS */
+  .episode-card {
+    width: 100px;
+  }
+
+  .episode-card img {
+    height: 70px;
+  }
+
+  .episode-card p {
+    font-size: 10px;
+  }
 }
 
 /* Móviles */
@@ -239,6 +377,24 @@ iframe {
     font-size: 1.5rem;
     text-align: center;
   }
+
+  /* RESPONSIVE PARA EPISODIOS */
+  .episode-card {
+    width: 80px;
+  }
+
+  .episode-card img {
+    height: 60px;
+  }
+
+  .episode-card p {
+    font-size: 9px;
+  }
+
+  #episodes-container {
+    justify-content: center;
+    gap: 8px;
+  }
 }
 
 /* Móviles muy pequeños */
@@ -254,5 +410,18 @@ iframe {
 
   .info {
     font-size: 0.9rem;
+  }
+
+  /* RESPONSIVE PARA EPISODIOS */
+  .episode-card {
+    width: 70px;
+  }
+
+  .episode-card img {
+    height: 50px;
+  }
+
+  .episode-card p {
+    font-size: 8px;
   }
 }
