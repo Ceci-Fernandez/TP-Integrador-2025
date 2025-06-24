@@ -692,12 +692,26 @@ iframe {
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  gap: 0.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.button_favorito { 
+
+  background-color: #e22727;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.5em;
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  margin: 1rem 0;
 }
 
 .similares {
@@ -786,13 +800,20 @@ iframe {
 
 .boton_izquierda,
 .boton_derecha {
-  background-color: #b93210;
-  color: blueviolet;
+  background-color: #000000;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 1rem;
   font-size: 1.5em;
   cursor: pointer;
   border-radius: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.boton_izquierda:hover,
+.boton_derecha:hover {
+  background-color: #006fce;
+  transform: scale(1.1);
 }
 
 
