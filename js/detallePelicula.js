@@ -40,7 +40,7 @@ function generarTrailerHTML(pelicula) {
 function extraerIdYouTube(url) {
   const regex = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?/\s]{11})/
   const match = url.match(regex)
-  return match ? match[1] : "dQw4w9WgXcQ" // Rick Roll como fallback 😄
+  return match ? match[1] : "dQw4w9WgXcQ" 
 }
 
 // 👥 Función para generar HTML de actores con enlaces a Wikipedia
