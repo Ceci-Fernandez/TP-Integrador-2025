@@ -77,7 +77,7 @@ function generateAlternativePayments() {
       methodDiv.innerHTML = `
         <label class="registro__metodo-pago">
           <input type="radio" name="payment-method" value="transferencia" onchange="showTransferData()">
-          <img src="${method.image}" alt="${method.name}" style="width: 30px; height: 30px;">
+     
           <span>${method.name}</span>
         </label>
         <div class="transferencia-info" id="transfer-info" style="display: none;">
@@ -107,7 +107,7 @@ function generateAlternativePayments() {
       methodDiv.innerHTML = `
         <label class="registro__metodo-pago">
           <input type="radio" name="payment-method" value="cupon" onchange="showCouponOptions()">
-          <img src="${method.image}" alt="${method.name}" style="width: 30px; height: 30px;">
+         
           <span>${method.name}</span>
         </label>
         <div class="cupon-options" id="coupon-options" style="display: none;">
