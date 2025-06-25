@@ -1,0 +1,371 @@
+.registro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2em;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: var(--color-claro);
+  border-radius: 1em;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.registro__datos,
+.registro__pago,
+.datos__tarjeta {
+  flex: 1;
+}
+
+.registro__formulario,
+.datos__tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  max-width: 25em;
+}
+
+.datos__tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  background-color: #eaebf2;
+  padding: 1em;
+}
+
+.registro__tarjetas {
+  display: flex;
+  gap: 1em;
+}
+
+.registro__pago {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.registro__formulario input {
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 0.5em;
+  border: 0.5px solid rgb(212, 207, 207);
+  max-width: 100%;
+}
+
+.datos__tarjeta input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  margin: 0.3em;
+}
+
+.fila-en-columnas__tarjeta {
+  display: flex;
+  gap: 0.5em;
+}
+
+.fila-en-columnas__tarjeta input {
+  flex: 1;
+}
+
+.registro__tarjeta img {
+  width: 3em;
+}
+
+.registro__planes {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.registro__plan {
+  flex: 1;
+  background-color: #233dff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.registro__plan input[type="radio"] {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+}
+
+.registro__plan-label {
+  padding: 0.5em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  display: inline-block;
+  transition: border 0.3s;
+}
+
+.plan-premium {
+  position: relative;
+}
+
+.plan-premium::after {
+  content: "Más popular";
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  background-color: red;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2em;
+  border-top-left-radius: 2em;
+}
+
+.registro__plan:hover {
+  background-color: #d3d8e8;
+  color: var(--color-oscuro);
+}
+
+.contenedor-btn__registro {
+  display: flex;
+  gap: 2em;
+}
+
+.contenedor-btn__registro .btn {
+  border: none;
+  padding: 1.5em 1em;
+}
+
+.metodo-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 8px;
+}
+
+
+.registro__metodo-pago {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin: 0.4em 0;
+  cursor: pointer;
+}
+
+.registro__metodo-pago input[type="radio"] {
+  margin: 0;
+  accent-color: #233dff;
+  transform: scale(1.2);
+}
+
+
+.cupon-options {
+  margin-top: 0.5em;
+  padding-left: 1.5em;
+}
+
+
+.cupon-info {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 6px;
+  margin-top: 1em;
+  font-size: 0.95em;
+  color: #333;
+}
+
+
+#confirm-coupon {
+  background-color: #233dff;
+  color: white;
+  border: none;
+  margin-top: 1em;
+  padding: 0.8em 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#confirm-coupon:hover {
+  background-color: #001ec0;
+}
+
+
+
+.registro__metodos-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.metodo-pago-columna {
+  flex: 1 1 280px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.metodo-titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.6em;
+}
+
+.metodo-titulo i {
+  font-size: 1.6em;
+  display: block;
+  margin-bottom: 0.3em;
+  color: #233dff;
+}
+
+.metodo-titulo input[type="radio"] {
+  margin-top: 0.5em;
+  accent-color: #233dff;
+  transform: scale(1.2);
+}
+
+.metodo-detalle {
+  margin-top: 1em;
+  font-size: 0.95em;
+  background-color: #fff;
+  padding: 0.8em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.cupon-options {
+  margin-top: 0.8em;
+}
+
+.registro__metodo-pago {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0.4em 0;
+}
+
+.registro__metodo-pago input[type="radio"] {
+  accent-color: #233dff;
+  transform: scale(1.1);
+}
+
+.cupon-info {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+#confirm-coupon {
+  background-color: #233dff;
+  color: white;
+  border: none;
+  margin-top: 1em;
+  padding: 0.8em 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#confirm-coupon:hover {
+  background-color: #001ec0;
+}
+
+@media (max-width: 768px) {
+  .registro__metodos-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metodo-pago-columna {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .metodo-titulo {
+    font-size: 1em;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .registro {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .registro__formulario,
+  .datos__tarjeta {
+    max-width: 100%;
+  }
+
+  .registro__planes {
+    flex-direction: column;
+  }
+
+  .registro__tarjetas {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .contenedor-btn__registro {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .registro__plan input[type="radio"] {
+    top: 0.5em;
+    right: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .registro {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .registro__planes {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .plan-premium {
+    margin-top: 1.3em;
+  }
+
+  .registro__plan {
+    flex: 1;
+  }
+
+  .registro__tarjetas {
+    display: flex;
+    gap: 1em;
+  }
+
+  .contenedor-btn__registro {
+    flex-wrap: wrap;
+  }
+
+  .registro__tarjeta img {
+    width: 4em;
+  }
+}
