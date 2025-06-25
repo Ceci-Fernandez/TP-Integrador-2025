@@ -1,0 +1,69 @@
+.foto__perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 2em 0 2em;
+}
+
+.foto__perfil img {
+  border-radius: 50%;
+  width: 5em;
+}
+
+.suscripto__registro {
+  padding: 1em;
+  background-color: #d3d8e8;
+  width: 100%;
+}
+
+.tarjeta-toggle {
+  background: none;
+  border: none;
+  color: var(--color-botones);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+.tarjeta-section {
+  display: none;
+}
+
+.tarjeta-section.active {
+  display: block;
+}
+
+.favoritos-section {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border-radius: 0.5em;
+}
+
+.favoritos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.favorito-item {
+  position: relative;
+}
+
+.favorito-item img {
+  width: 100%;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.metodos-pago-adicionales,
+.metodo-pago,
+.cupon-options,
+.transferencia-info{
+  margin:1em ;
+  padding: 1em;
+}
+.cupon-info,.btn-pago{
+  margin: 1em;
+}
