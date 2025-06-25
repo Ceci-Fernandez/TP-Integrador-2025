@@ -7,8 +7,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-
-  /*SE AGREGO ESTILOS PARA TODA LA PÁGINA*/
 }
 
 :root {
@@ -18,8 +16,6 @@
   --color-claro: #f4f6fc;
   --color-gris-footer: #18161a;
   --color-gris-claro: #7e7d7f;
-  /*DEFINÍ VARIABLES DE LOS COLORES QUE VAMOS A USAR EN TODO EL SITIO. SOLO USAR ESTOS COLORES.
-     */
 }
 
 body {
@@ -47,14 +43,13 @@ body {
   background-color: var(--color-base);
   color: var(--color-claro);
 }
+
 .btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
-
-/* || HEADER */
-
+/* HEADER */
 .header {
   background-color: #050a30;
   position: sticky;
@@ -86,12 +81,7 @@ body {
 
 .header__li a {
   font-weight: 400;
-    color: var(--color-claro);
-}
-
-.header__li-btn a {
-  font-weight: 400;
-  text-transform: uppercase;
+  color: var(--color-claro);
 }
 
 .header__li-btn {
@@ -108,6 +98,7 @@ body {
   background-color: var(--color-base);
   color: var(--color-claro);
 }
+
 .user-avatar {
   width: 40px;
   height: 40px;
@@ -116,40 +107,7 @@ body {
   cursor: pointer;
 }
 
-
-.error-message {
-  color: red;
-  font-size: 0.9em;
-  margin-top: 0.5em;
-}
-
-.success-message {
-  color: green;
-  font-size: 0.9em;
-  margin-top: 0.5em;
-}
-
-
-.favorite-heart {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5em;
-  color:rgb(240, 7, 7);
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-
-.pelicula {
-  position: relative;
-}
-
-
-.hidden {
-  display: none;
-}
-/*FOOTER se usa en todas las vistas*/
+/* FOOTER */
 .footer {
   background-color: var(--color-gris-footer);
   color: var(--color-claro);
@@ -191,11 +149,42 @@ a {
   text-align: center;
 }
 
+/* Mensajes de error */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+/* Favoritos */
+.favorite-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  color:rgb(240, 7, 7);
+  cursor: pointer;
+  transition: color 0.3s;
+}
 
 
+.pelicula {
+  position: relative;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-
-  /* Header */
   .header {
     position: static;
     display: flex;
@@ -236,40 +225,14 @@ a {
     margin-bottom: 0.5em;
   }
 
-
-  /* Footer */
   .footer {
     gap: 1em;
     padding: 1em;
-    background-color:var(--color-base);
+    background-color: #050a30;
     color: white;
   }
 
   .columna_footer {
     text-align: center;
   }
-}
-
-/*media query footer*/
-/*celu*/
-@media screen and (max-width: 600px) {
-
-  .columna_footer p,
-  ul,
-  a {
-    font-size: .8em;
-  }
-
-  .columna_footer-redes p,
-  ul,
-  a {
-    font-size: .8em;
-
-  }
-
-  .redes__footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
 }
