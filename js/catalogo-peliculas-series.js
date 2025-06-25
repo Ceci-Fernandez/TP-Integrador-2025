@@ -1,5 +1,6 @@
+
 const allMovies = [
-  // PELÍCULAS
+  //------ PELÍCULAS---------------
   {
     id: 6,
     title: "Django Unchained",
@@ -98,7 +99,7 @@ const allMovies = [
     bannerImage: "https://wallpaperaccess.com/full/19924.jpg",
   },
 
-  // SERIES
+  // ------SERIES---------
   {
     id: 3,
     title: "Friends",
@@ -214,7 +215,7 @@ const allMovies = [
   },
 ]
 
-// CATÁLOGO DETALLADO PARA PELÍCULAS
+// Este catatalogo detalla las series, se usa en detalles de peliculas y series.
 const catalogoPeliculas = {
   6: {
     titulo: "Django Unchained",
@@ -370,7 +371,6 @@ const catalogoPeliculas = {
   },
 }
 
-// CATÁLOGO DETALLADO PARA SERIES
 const catalogoSeries = {
   3: {
     titulo: "Friends",
@@ -553,7 +553,7 @@ const catalogoSeries = {
   },
 }
 
-// TEMPORADAS Y EPISODIOS DETALLADOS
+// Aca se detallan los capitulos de las series.
 const temporadas = {
   3: {
     // Friends
@@ -668,7 +668,6 @@ const temporadas = {
   },
 }
 
-// variables globales
 window.allMovies = allMovies
 window.catalogoPeliculas = catalogoPeliculas
 window.catalogoSeries = catalogoSeries
