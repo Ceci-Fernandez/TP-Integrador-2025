@@ -1,8 +1,8 @@
 const cardTypes = [
-  { value: "naranja", name: "Tarjeta Naranja", image: "../img/img-tarjetas/tarjeta-naranja@2x.png" },
-  { value: "mastercard", name: "Mastercard", image: "../img/img-tarjetas/mastercard@2x.png" },
-  { value: "visa", name: "Visa", image: "../img/img-tarjetas/visa@2x.png" },
-  { value: "cabal", name: "Cabal", image: "../img/img-tarjetas/cabal@2x.png" },
+  { value: "naranja", name: "Tarjeta Naranja", image: "../img/img-tarjetas/naranja.png" },
+  { value: "mastercard", name: "Mastercard", image: "../img/img-tarjetas/mastercard.png" },
+  { value: "visa", name: "Visa", image: "../img/img-tarjetas/visa.png" },
+  { value: "cabal", name: "Cabal", image: "../img/img-tarjetas/cabal.png" },
 ]
 
 
@@ -10,7 +10,7 @@ const alternativePayments = [
   {
     type: "transferencia",
     name: "Transferencia Bancaria",
-    image: "../img/transferencia-icon.png",
+
     data: {
       cbu: "0170329940000012345678",
       alias: "CILA.MOVIES.PAGO",
@@ -22,10 +22,10 @@ const alternativePayments = [
   {
     type: "cupon",
     name: "Cupón de Pago",
-    image: "../img/cupon-icon.png",
+   
     options: [
-      { value: "pagofacil", name: "Pago Fácil", image: "../img/pagofacil-logo.png" },
-      { value: "rapipago", name: "Rapipago", image: "../img/rapipago-logo.png" },
+      { value: "pagofacil", name: "Pago Fácil", image: "/img/img-tarjetas/pagofacil.png" },
+      { value: "rapipago", name: "Rapipago", image: "/img/img-tarjetas/rapipago.png" },
     ],
   },
 ]
@@ -33,7 +33,7 @@ const alternativePayments = [
 let currentUser = null
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Verificar si hay usuario logueado
+ 
   const user = localStorage.getItem("currentUser")
   if (!user) {
     window.location.href = "login.html"
@@ -174,7 +174,7 @@ function showCouponOptions() {
 function generateCoupon(type) {
   const couponCode = generateCouponCode()
   const expiryDate = new Date()
-  expiryDate.setDate(expiryDate.getDate() + 7) // 7 días de vencimiento
+  expiryDate.setDate(expiryDate.getDate() + 7) 
 
   document.getElementById("coupon-code").textContent = couponCode
   document.getElementById("coupon-place").textContent = type === "pagofacil" ? "Pago Fácil" : "Rapipago"
