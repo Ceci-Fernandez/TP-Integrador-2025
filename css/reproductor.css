@@ -1,0 +1,50 @@
+.reproductor {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.reproductor__container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.reproductor__video {
+  width: 100%;
+  height: 70vh;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.reproductor__info {
+  color: white;
+  margin-top: 2em;
+}
+
+.reproductor__titulo {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.reproductor__controles {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+  .reproductor__video {
+    height: 50vh;
+  }
+
+  .reproductor__controles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
