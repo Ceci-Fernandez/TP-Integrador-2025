@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function validateName(name) {
     return /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(name)
   }
-
+// evlaua que no se ingresen espacios blancos o @ true o false
   function validateEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   }
-
+//
   function validateUser(user) {
     return /^[a-zA-Z0-9]+$/.test(user)
   }
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     return (sumWithoutLast % 2 === 0 && lastDigit % 2 === 1) || (sumWithoutLast % 2 === 1 && lastDigit % 2 === 0)
   }
-
+// piquito /numeros 0-9, evalua si son o no 3 numeros o distinto de 000
   function validateCVV(cvv) {
     return /^\d{3}$/.test(cvv) && cvv !== "000"
   }
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
     registroBtn.disabled = !(allFieldsFilled && planSelected && tarjetaSelected && isValid)
   }
 
-l
+
   Object.values(inputs).forEach((input) => {
     input.addEventListener("input", validateForm)
   })
