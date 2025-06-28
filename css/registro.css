@@ -309,11 +309,14 @@
   .registro {
     flex-direction: column;
     padding: 1em;
+
   }
 
+  
   .registro__formulario,
   .datos__tarjeta {
     max-width: 100%;
+
   }
 
   .registro__planes {
