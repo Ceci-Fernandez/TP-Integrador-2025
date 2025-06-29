@@ -149,7 +149,7 @@ a {
   text-align: center;
 }
 
-/* Mensajes de error */
+
 .error-message {
   color: red;
   font-size: 0.9em;
@@ -162,7 +162,7 @@ a {
   margin-top: 0.5em;
 }
 
-/* Favoritos */
+
 .favorite-heart {
   position: absolute;
   top: 10px;
@@ -178,12 +178,12 @@ a {
   position: relative;
 }
 
-/* Hidden class */
+
 .hidden {
   display: none;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .header {
     position: static;
@@ -228,7 +228,7 @@ a {
   .footer {
     gap: 1em;
     padding: 1em;
-    background-color: #050a30;
+    background-color:#18161a;
     color: white;
   }
 
