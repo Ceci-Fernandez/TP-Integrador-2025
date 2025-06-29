@@ -314,6 +314,13 @@
   .registro__formulario,
   .datos__tarjeta {
     max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .registro__formulario input,
+  .datos__tarjeta input {
+    max-width: 20em;
   }
 
   .registro__planes {
