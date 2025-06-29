@@ -289,6 +289,22 @@
 }
 
 @media (max-width: 768px) {
+
+  .registro__formulario {
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.registro__formulario input {
+  width: 100%;
+  max-width: 30em;
+  margin: 0 auto;
+  display: block;
+}
+
   .registro__metodos-row {
     flex-direction: column;
     align-items: center;
@@ -304,7 +320,6 @@
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .registro {
     flex-direction: column;
@@ -312,11 +327,31 @@
 
   }
 
-  
-  .registro__formulario,
+  .registro__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .registro__formulario {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .registro__formulario input {
+    width: 100%;
+    max-width: 30em;
+  }
+
   .datos__tarjeta {
     max-width: 100%;
 
+  .datos__tarjeta input {
+    width: 100%;
+    max-width: 30em;
   }
 
   .registro__planes {
@@ -347,35 +382,46 @@
   }
 
 
+
 @media screen and (max-width: 1024px) {
   .registro {
-    flex-direction: column;
-    gap: 1.5em;
-  }
-
-  .registro__planes {
-    flex-wrap: wrap;
-    gap: 1em;
-  }
-
-  .plan-premium {
-    margin-top: 1.3em;
-  }
-
-  .registro__plan {
-    flex: 1;
-  }
-
-  .registro__tarjetas {
     display: flex;
-    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 1em;
+    box-sizing: border-box;
   }
 
-  .contenedor-btn__registro {
-    flex-wrap: wrap;
+  .registro__datos {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .registro__tarjeta img {
-    width: 4em;
+  .registro__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
   }
+
+  .registro__formulario input {
+    width: 100%;
+    max-width: 40em;
+    margin: 0.5em 0;
+    display: block;
+    box-sizing: border-box;
+  }
+}
+
 }
