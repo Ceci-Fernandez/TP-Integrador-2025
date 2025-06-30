@@ -323,6 +323,13 @@
     flex-direction: column;
   }
 
+  .plan-premium { 
+
+  margin-top: 1em;
+ }
+
+  }
+
   .registro__tarjetas {
     display: flex;
     gap: 1em;
@@ -338,7 +345,7 @@
     top: 0.5em;
     right: 0.5em;
   }
-}
+
 
 @media screen and (max-width: 1024px) {
   .registro {
