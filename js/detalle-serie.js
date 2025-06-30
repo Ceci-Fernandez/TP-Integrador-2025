@@ -13,9 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function verificarEstadoLogin() {
-  const usuario = localStorage.getItem("currentUser")
+    const usuario = localStorage.getItem("currentUser")
   if (usuario) {
     usuarioActual = JSON.parse(usuario)
+
+
+    if (!usuarioActual.avatar) {
+      usuarioActual.avatar = '../img/avatars/avatar1.jpg'; 
+    }
+
     actualizarUIParaUsuarioLogueado()
   }
 }
@@ -23,13 +29,17 @@ function verificarEstadoLogin() {
 function actualizarUIParaUsuarioLogueado() {
   const seccionAuth = document.getElementById("auth-section")
   const footerAuth = document.getElementById("footer-auth")
+    const avatarUrl = usuarioActual.avatar || '../img/avatars/avatar1.png'
 
+    if (seccionAuth) {
   seccionAuth.innerHTML = `
     <a href="perfil.html">
-      <img src="../img/img-usuario.jpeg" alt="Avatar" class="user-avatar" />
+      <img src="${avatarUrl}" alt="Avatar" class="user-avatar" />
     </a>
-  `
-  footerAuth.innerHTML = '<a href="perfil.html">Perfil</a>'
+  `}
+   if (footerAuth) {
+  footerAuth.innerHTML = '<a href="perfil.html">Perfil</a>';
+   }
 }
 
 function cargarDetalleSerie() {
