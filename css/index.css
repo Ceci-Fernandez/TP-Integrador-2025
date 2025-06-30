@@ -1,23 +1,25 @@
-/* VARIABLES */
 :root {
   --color-botones: #233dff;
   --color-base: #1a2980;
 }
 
-/* HERO BANNER SLIDESHOW */
 .hero {
   position: relative;
+  z-index: 1000; 
   height: 70vh;
   overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  border-radius: 0;
+  width: 100vw; 
+  margin-left: calc(-50vw + 50%);
+  
 }
 
 .hero-banner {
   position: relative;
   height: 100%;
+  width: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .hero-slides {
@@ -131,7 +133,6 @@
   transform: scale(1.05);
 }
 
-/* Navegación del banner */
 .hero-nav {
   position: absolute;
   top: 50%;
@@ -162,7 +163,6 @@
   right: 20px;
 }
 
-/* Indicadores */
 .hero-indicators {
   position: absolute;
   bottom: 20px;
@@ -192,7 +192,6 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* BUSQUEDA */
 .busqueda {
   background-color: #050a30;
   text-align: center;
@@ -235,10 +234,9 @@
   background-color: var(--color-base);
 }
 
-/* FILTROS */
 .filtro {
   display: flex;
-  align-items: center;
+  align-items:start;
   gap: 0.5em;
   background-color: #050a30;
   padding-left: 1em;
@@ -259,31 +257,33 @@
   font: inherit;
 }
 
-/* CATALOGO */
 .catalogo {
   background-color: #050a30;
-}
-
-.catalogo__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1em;
   padding: 1em;
 }
 
+.catalogo__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content:center;
+}
+
 .pelicula {
+  width: 14em;
+  flex-shrink: 0;
   position: relative;
 }
 
 .pelicula img {
   width: 100%;
-  height: 280px;
+  height: auto;
+  display: block;
   object-fit: cover;
   border-radius: 0.5em;
   background-color: #000;
 }
 
-/* CAROUSEL PARA SIMILARES */
 .carousel-container {
   position: relative;
   display: flex;
@@ -353,7 +353,6 @@
   background: rgba(0, 0, 0, 1);
 }
 
-/* Contenedores de similares */
 #similar-movies,
 #similar-series {
   max-width: 100%;
@@ -361,7 +360,6 @@
   margin: 20px 0;
 }
 
-/* EPISODIOS MAS PEQUEÑOS */
 .episode-card {
   width: 150px;
   margin: 10px;
@@ -381,7 +379,6 @@
   margin-top: 5px;
 }
 
-/* TENDENCIAS */
 .tendencias {
   background: #050a30;
   color: white;
@@ -426,10 +423,14 @@
   text-shadow: 2px 2px 0 #000;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
     height: 60vh;
+    margin-left: calc(-50vw + 50%);
+  }
+  .hero-content {
+    padding: 15px;
+    margin: 0 10px;
   }
 
   .hero-content h1 {
@@ -484,7 +485,10 @@
   }
 
   .pelicula img {
+    width: 100%;
+    height: 100%;
     height: 220px;
+    object-fit: cover; 
   }
 
   .carousel-item {
@@ -508,6 +512,7 @@
 @media (max-width: 480px) {
   .hero {
     height: 50vh;
+    margin-left: calc(-50vw + 50%);
   }
 
   .hero-content h1 {

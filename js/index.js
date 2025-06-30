@@ -10,7 +10,7 @@ const featuredMovies = [
   { id: 18, type: "pelicula" },
 ];
 
-// Inicializar página
+
 document.addEventListener("DOMContentLoaded", () => {
   checkLoginStatus();
   initHeroBanner();
@@ -23,7 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
       loadTrending();
     }, 100);
   }
+  updateNavActiveState("nav-home"); 
 });
+
+function updateNavActiveState(activeId) {
+  const navLinks = ['nav-home', 'nav-peliculas', 'nav-series'];
+  navLinks.forEach(id => {
+    const link = document.getElementById(id);
+    if (link) {
+      if (id === activeId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    }
+  });
+}
 
 function initHeroBanner() {
   createHeroBanner();
@@ -179,8 +194,9 @@ function updateUIForLoggedUser() {
   if (authSection) {
     authSection.innerHTML = `
       <a href="html/perfil.html">
-        <img src="img/img-usuario.jpeg" alt="Avatar" class="user-avatar">
-      </a>
+             <img src="${currentUser.avatar || 'img/avatars/avatar1.png'}" alt="Avatar" class="user-avatar">
+            </a>
+  
     `;
   }
 
@@ -259,18 +275,32 @@ function loadTrending() {
 function filterMovies(type) {
   currentFilter = type;
   applyFilters();
+  updateNavActiveState(type === 'pelicula' ? 'nav-peliculas' : 'nav-series');
+}
+
+function showAll() {
+  currentFilter = "";
+  currentSearch = "";
+  document.getElementById("search-input").value = "";
+  document.getElementById("categoria").value = "";
+  applyFilters();
+  updateNavActiveState('nav-home');
 }
 
 function filterByCategory() {
   const category = document.getElementById("categoria").value;
   currentFilter = category;
   applyFilters();
+  updateNavActiveState(null);
 }
+
 
 function searchMovies() {
   const searchTerm = document.getElementById("search-input").value;
   currentSearch = searchTerm;
   applyFilters();
+
+  updateNavActiveState(null);
 }
 
 function applyFilters() {
@@ -285,7 +315,7 @@ function applyFilters() {
   if (currentFilter) {
     if (currentFilter === "pelicula" || currentFilter === "serie") {
       filtered = filtered.filter((movie) => movie.type === currentFilter);
-    } else {
+    } else if (currentFilter !== "") { // Se aplica filtro de categoría
       filtered = filtered.filter((movie) => movie.category === currentFilter);
     }
   }
@@ -315,7 +345,9 @@ function toggleFavorite(movieId) {
 
   favorites[currentUser.email] = userFavorites;
   localStorage.setItem("favorites", JSON.stringify(favorites));
-  loadMovies();
+  
+  
+  applyFilters();
 }
 
 const searchInput = document.getElementById("search-input");
@@ -323,5 +355,17 @@ if (searchInput) {
   searchInput.addEventListener("input", function () {
     currentSearch = this.value;
     applyFilters();
+   
+    if(this.value.length > 0) {
+        updateNavActiveState(null);
+    } else if (!currentFilter) {
+        updateNavActiveState('nav-home');
+    }
   });
+
+
+  window.logout = function() {
+    localStorage.removeItem("currentUser");
+    window.location.href = "index.html";
+};
 }

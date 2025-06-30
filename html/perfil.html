@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,23 @@
             <form class="registro__formulario" id="perfil-form">
                 <h2 class="registro__titulo">Mi Perfil</h2>
                 <div class="foto__perfil">
-                    <img src="../img/img-usuario.jpeg" alt="Avatar">
+                    <div class="avatar-container">
+                        <img id="user-avatar" src="../img/avatars/avatar1.png" alt="Avatar">
+                        <button id="change-avatar-btn" class="avatar-change-btn">Cambiar avatar</button>
+                    </div>
+                    <div id="avatar-selection" class="avatar-selection" style="display: none;">
+                        <h4>Selecciona tu avatar</h4>
+                        <div class="avatar-options">
+                            <img src="../img/avatars/avatar1.jpg" alt="Avatar 1" class="avatar-option"
+                                data-avatar="avatar1">
+                            <img src="../img/avatars/avatar2.jpg" alt="Avatar 2" class="avatar-option"
+                                data-avatar="avatar2">
+                            <img src="../img/avatars/avatar3.jpg" alt="Avatar 3" class="avatar-option"
+                                data-avatar="avatar3">
+                            <img src="../img/avatars/avatar4.jpg" alt="Avatar 4" class="avatar-option"
+                                data-avatar="avatar4">
+                        </div>
+                    </div>
                     <h3 id="user-name">Usuario</h3>
                 </div>
 
@@ -55,26 +72,17 @@
         <section class="registro__pago">
             <div class="suscripto__registro">
                 <p>Tu plan</p>
-                <h3 id="current-plan">Premium</h3>
-                <p>Próxima factura de $7.000.00</p>
+                <h3 id="current-plan-name">Premium</h3>
+                <p id="current-plan-price">$7.000/mes</p>
+                <p id="current-plan-devices">4 dispositivos</p>
+                <p id="current-plan-quality">4K Ultra HD</p>
                 <p id="current-card">Tarjeta que termina en ****</p>
             </div>
 
             <form id="plan-form">
                 <h3 class="registro__subtitulo">Cambiar mi plan</h3>
-                <div class="registro__planes">
-                    <label class="registro__plan">
-                        <input type="radio" name="plan" value="basico">
-                        <span class="registro__plan-label">Básico</span>
-                    </label>
-                    <label class="registro__plan">
-                        <input type="radio" name="plan" value="estandar">
-                        <span class="registro__plan-label">Estándar</span>
-                    </label>
-                    <label class="registro__plan plan-premium">
-                        <input type="radio" name="plan" value="premium">
-                        <span class="registro__plan-label">Premium</span>
-                    </label>
+                <div class="registro__planes" id="planes-container">
+
                 </div>
 
                 <button type="button" class="tarjeta-toggle" onclick="toggleTarjetaSection()">
@@ -83,18 +91,18 @@
 
                 <div class="tarjeta-section" id="tarjeta-section">
                     <h3 class="registro__subtitulo">Cambiar método de pago</h3>
-                    <p class="registro__mensaje">Tu forma de pago está encriptada. <strong>Transacciones seguras y confiables.</strong></p>
+                    <p class="registro__mensaje">Tu forma de pago está encriptada. <strong>Transacciones seguras y
+                            confiables.</strong></p>
 
-                
                     <div class="registro__tarjetas" id="dynamic-cards">
-                     
+
                     </div>
 
-                
                     <div class="datos__tarjeta" id="card-data-section" style="display: none;">
                         <h3>Ingresá los datos de tu tarjeta de débito o crédito</h3>
 
-                        <input type="text" name="numeroTarjeta" id="numeroTarjeta" placeholder="Número de tarjeta" maxlength="16">
+                        <input type="text" name="numeroTarjeta" id="numeroTarjeta" placeholder="Número de tarjeta"
+                            maxlength="16">
                         <div id="tarjeta-error" class="error-message hidden"></div>
 
                         <div class="fila-en-columnas__tarjeta">
@@ -106,9 +114,8 @@
                         <input type="text" name="nombreTarjeta" id="nombreTarjeta" placeholder="Nombre en la tarjeta">
                     </div>
 
-   
                     <div class="metodos-pago-adicionales" id="alternative-payments">
-                     
+
                     </div>
                 </div>
 
@@ -120,18 +127,17 @@
                 </div>
             </form>
 
-
             <div class="favoritos-section">
                 <h3>Mis Favoritos</h3>
 
                 <h4>Películas Favoritas</h4>
                 <div class="favoritos-grid" id="favorite-movies">
-               
+
                 </div>
 
                 <h4>Series Favoritas</h4>
                 <div class="favoritos-grid" id="favorite-series">
-                 
+
                 </div>
             </div>
         </section>
@@ -158,15 +164,22 @@
         <div class="columna_footer-redes">
             <p>Redes Sociales</p>
             <ul class="redes__footer">
-                <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img src="../img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
-                <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png" alt="Logo-Instagram"></a></li>
-                <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png" alt="Logo-YouTube"></a></li>
-                <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png" alt="Logo-Tik-tok"></a></li>
-                <li><a href="https://x.com/UnlamOficial"><img src="../img/iconos redes/gorjeo.png" alt="Logo-Twitter"></a></li>
+                <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA"><img
+                            src="../img/iconos redes/facebook.png" alt="Logo-Facebook"></a></li>
+                <li><a href="https://www.instagram.com/unlamoficial/?hl=es"><img src="../img/iconos redes/instagram.png"
+                            alt="Logo-Instagram"></a></li>
+                <li><a href="https://www.youtube.com/c/unlamoficial"><img src="../img/iconos redes/youtube.png"
+                            alt="Logo-YouTube"></a></li>
+                <li><a href="https://www.tiktok.com/@unlamoficialok?lang=es"><img src="../img/iconos redes/tik-tok.png"
+                            alt="Logo-Tik-tok"></a></li>
+                <li><a href="https://x.com/UnlamOficial"><img src="../img/iconos redes/gorjeo.png"
+                            alt="Logo-Twitter"></a></li>
             </ul>
         </div>
     </footer>
-<script src="../js/catalogo-peliculas-series.js"></script>
+
+    <script src="../js/catalogo-peliculas-series.js"></script>
     <script src="../js/perfil.js"></script>
 </body>
+
 </html>
