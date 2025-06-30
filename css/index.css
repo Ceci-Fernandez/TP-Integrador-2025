@@ -5,17 +5,21 @@
 
 .hero {
   position: relative;
+  z-index: 1000; 
   height: 70vh;
   overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  border-radius: 0;
+  width: 100vw; 
+  margin-left: calc(-50vw + 50%);
+  
 }
 
 .hero-banner {
   position: relative;
   height: 100%;
+  width: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .hero-slides {
@@ -422,6 +426,11 @@
 @media (max-width: 768px) {
   .hero {
     height: 60vh;
+    margin-left: calc(-50vw + 50%);
+  }
+  .hero-content {
+    padding: 15px;
+    margin: 0 10px;
   }
 
   .hero-content h1 {
@@ -476,7 +485,10 @@
   }
 
   .pelicula img {
+    width: 100%;
+    height: 100%;
     height: 220px;
+    object-fit: cover; 
   }
 
   .carousel-item {
@@ -500,6 +512,7 @@
 @media (max-width: 480px) {
   .hero {
     height: 50vh;
+    margin-left: calc(-50vw + 50%);
   }
 
   .hero-content h1 {
