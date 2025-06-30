@@ -67,3 +67,65 @@
 .cupon-info,.btn-pago{
   margin: 1em;
 }
+
+
+.avatar-container {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #283abe;
+    object-fit: cover;
+}
+
+.avatar-change-btn {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background: #283abe;
+    color: white;
+    border: none;
+    border-radius: 2em;
+    width: 8em;
+    height: 2em;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-selection {
+    position: absolute;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.avatar-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.avatar-option {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+     transition: transform 0.2s;
+}
+
+.avatar-option:hover {
+    transform: scale(1.1);
+    border-color: #4CAF50;
+}
