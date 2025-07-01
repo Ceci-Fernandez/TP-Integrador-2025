@@ -331,13 +331,6 @@
     padding: 1em;
   }
 
-  .registro__datos,
-  .registro__pago {
-    width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
-  }
-
   .registro__formulario {
     display: flex;
     flex-direction: column;
@@ -352,7 +345,7 @@
   .registro__label,
   .registro__input,
   .contenedor-btn__registro {
-    
+
     width: 100%;
     max-width: 350px;
   }
@@ -381,7 +374,7 @@
 .registro__pago {
   margin: 0 auto 2em auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 20em;
 }
 .plan-premium{ 
   margin-top: 1.5em;
