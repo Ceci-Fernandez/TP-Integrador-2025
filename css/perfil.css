@@ -141,40 +141,11 @@
 }
 
 @media (max-width: 768px) {
-  .registro__formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1em;
-    width: 100%;
-    box-sizing: border-box;
-  }
+  
 
   .foto__perfil {
     align-items: center;
     text-align: center;
-  }
-
-  .registro__label,
-  .registro__input,
-  .contenedor-btn__registro {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .registro__input {
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 0.3em;
-    font-size: 1em;
-  }
-
-  .contenedor-btn__registro button {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 1em;
   }
 
   .avatar-container {
@@ -186,60 +157,10 @@
   }
 }
 @media (max-width: 1024px) {
-  .registro {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 1em;
-  }
-
-  .registro__datos,
-  .registro__pago {
-    width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
-  }
-
-  .registro__formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1em;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
+  
   .foto__perfil {
     align-items: center;
     text-align: center;
-  }
-
-  .registro__label,
-  .registro__input,
-  .contenedor-btn__registro {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .registro__input {
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 0.3em;
-    font-size: 1em;
-  }
-
-  .contenedor-btn__registro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contenedor-btn__registro button {
-    width: 100%;
-    max-width: 350px;
-    margin-top: 1em;
   }
 
   .avatar-container {
@@ -249,12 +170,5 @@
   #user-name {
     margin-top: 0.5em;
   }
-
-  .registro__datos,
-.registro__pago {
-  margin: 0 auto 2em auto;
-  width: 100%;
-  max-width: 500px;
-}
 
 }
